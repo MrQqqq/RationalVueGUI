@@ -8,7 +8,7 @@
 
 界面文件夹结构主要是参照下面这个图：
 
-![image-20200711145721447](C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20200711145721447.png)
+![image-20200711145721447](image-20200711145721447.png)
 
 GUI各个模块对应的文件夹如下：
 
