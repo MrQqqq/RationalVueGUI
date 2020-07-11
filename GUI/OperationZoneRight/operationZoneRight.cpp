@@ -8,14 +8,34 @@
  * @FilePath: \QTCreateByCMake\GUI\OperationZoneRight\operationZoneRight.cpp
  */ 
 #include "operationZoneRight.h"
-#include <QTextEdit>
+
+#include <QWidget>
+#include <QDockWidget>
+#include <QVBoxLayout>
+#include <QPushButton>
+
+#include "crvfigureset.h"
+#include "myqss.h"
 COperationZoneRight::COperationZoneRight(QWidget *parent) :
     QMainWindow(parent)
 {
     
-    QTextEdit *ptr_textArea = new QTextEdit(this);
-    ptr_textArea->setText("Widget");
-    setCentralWidget(ptr_textArea);
+    MyQss::setStyle(":/qss/demo.qss");
+
+    QWidget* centralWidget = new QWidget;
+    this->setCentralWidget(centralWidget);
+    this->resize(800,600);
+    QDockWidget* dockWidget_ConsOptZone = new QDockWidget;
+    dockWidget_ConsOptZone->setWindowTitle("Construct Operation Zone");
+
+    QWidget* subWidget = new QWidget;
+    CRVFigureSet* consOptZone = new CRVFigureSet(subWidget);
+    consOptZone->setObjectName("consOptZone");
+
+    QVBoxLayout* vBoxLayout = new QVBoxLayout;
+    vBoxLayout->addWidget(consOptZone);
+    dockWidget_ConsOptZone->setWidget(consOptZone);
+    this->addDockWidget(Qt::BottomDockWidgetArea, dockWidget_ConsOptZone);
 }
 
 COperationZoneRight::~COperationZoneRight()

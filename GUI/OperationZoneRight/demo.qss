@@ -1,0 +1,42 @@
+#consOptZone{
+    background-color:rgb(144,148,156);
+}
+
+#m_pLabelResultFeature{
+    background-color:rgb(184,186,195);
+    font: 25 10pt "Microsoft YaHei";
+    border-radius: 1px;
+    border: 2px groove gray;
+}
+
+#ShrinkFactor{
+    background-color:rgb(168,172,182);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+
+#LineEditLSEOrig{
+    background-color:rgb(168,172,182);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+
+#LineEditLSENew{
+    background-color:rgb(168,172,182);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+
+#ConstructOperationBtns{
+    background-color:rgb(160,160,160);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
