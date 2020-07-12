@@ -85,7 +85,7 @@ public:
         m_pTbWidgetItemDataZone2 = new QTableWidgetItem(*m_pTbWidgetItemDataZone1);
         m_pTbWidgetItemDataZone3 = new QTableWidgetItem(*m_pTbWidgetItemDataZone1);
         m_pTbWidgetItemDataZone1->setCheckState(Qt::Checked);
-        m_pTbWidgetItemDataZone1->setFlags(m_pTbWidgetItemDataZone1->flags() & (~Qt::ItemIsEditable));//文本设置为不可编辑
+        m_pTbWidgetItemDataZone1->set;
         m_pTbWidgetItemDataZone2->setCheckState(Qt::Checked);
         m_pTbWidgetItemDataZone3->setCheckState(Qt::Checked);
         m_pTableWidgetDataZone->setItem(0,0,new QTableWidgetItem(QIcon(":/Images/GCV1.png"),"GCV1",QTableWidgetItem::Type));
