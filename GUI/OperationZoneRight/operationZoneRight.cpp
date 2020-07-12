@@ -8,7 +8,7 @@
 
 #include "crvfigureset.h"
 #include "myqss.h"
-OperationZoneRight::OperationZoneRight(QWidget *parent) :
+COperationZoneRight::COperationZoneRight(QWidget *parent) :
     QMainWindow(parent)
 {
     MyQss::setStyle(":/qss/demo.qss");
@@ -30,7 +30,7 @@ OperationZoneRight::OperationZoneRight(QWidget *parent) :
 
 }
 
-OperationZoneRight::~OperationZoneRight()
+COperationZoneRight::~COperationZoneRight()
 {
     delete ui;
 }
