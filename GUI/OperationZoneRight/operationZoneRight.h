@@ -4,19 +4,19 @@
 #include <QMainWindow>
 
 namespace Ui {
-class OperationZoneRight;
+class COperationZoneRight;
 }
 
-class OperationZoneRight : public QMainWindow
+class COperationZoneRight : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit OperationZoneRight(QWidget *parent = 0);
-    ~OperationZoneRight();
+    explicit COperationZoneRight(QWidget *parent = 0);
+    ~COperationZoneRight();
 
 private:
-    Ui::OperationZoneRight *ui;
+    Ui::COperationZoneRight *ui;
 };
 
 #endif // MAINWINDOW_H
