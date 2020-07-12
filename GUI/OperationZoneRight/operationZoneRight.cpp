@@ -1,5 +1,14 @@
-#include "OperationZoneRight.h"
-#include "ui_OperationZoneRight.h"
+/*
+ * @Description: 
+ * @Author: szq
+ * @Github: https://github.com/MrQqqq
+ * @Date: 2020-07-11 15:59:50
+ * @LastEditors: szq
+ * @LastEditTime: 2020-07-11 17:25:57
+ * @FilePath: \QTCreateByCMake\GUI\OperationZoneRight\operationZoneRight.cpp
+ */ 
+#include "operationZoneRight.h"
+
 
 #include <QWidget>
 #include <QDockWidget>
@@ -11,6 +20,7 @@
 COperationZoneRight::COperationZoneRight(QWidget *parent) :
     QMainWindow(parent)
 {
+    
     MyQss::setStyle(":/qss/demo.qss");
 
 //    QWidget* centralWidget = new QWidget;     //设置中央窗口，否则单独运行该界面DockWidget将充满主窗口
@@ -27,10 +37,9 @@ COperationZoneRight::COperationZoneRight(QWidget *parent) :
     vBoxLayout->addWidget(consOptZone);
     dockWidget_ConsOptZone->setWidget(consOptZone);
     this->addDockWidget(Qt::BottomDockWidgetArea, dockWidget_ConsOptZone);  //更改浮动窗口位置
-
 }
 
 COperationZoneRight::~COperationZoneRight()
 {
-    delete ui;
+    
 }
