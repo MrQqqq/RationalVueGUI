@@ -8,8 +8,6 @@
  * @FilePath: \QTCreateByCMake\GUI\OperationZoneRight\operationZoneRight.cpp
  */ 
 #include "operationZoneRight.h"
-
-
 #include <QWidget>
 #include <QDockWidget>
 #include <QVBoxLayout>
@@ -20,23 +18,22 @@
 COperationZoneRight::COperationZoneRight(QWidget *parent) :
     QMainWindow(parent)
 {
-    
-    MyQss::setStyle(":/qss/demo.qss");
+	MyQss::setStyle(":/qss/demo.qss");
 
-//    QWidget* centralWidget = new QWidget;     //璁剧疆涓ぎ绐楀彛锛屽惁鍒欏崟鐙繍琛岃鐣岄潰DockWidget灏嗗厖婊′富绐楀彛
-//    this->setCentralWidget(centralWidget);
-//    this->resize(800,600);
-    QDockWidget* dockWidget_ConsOptZone = new QDockWidget;
-    dockWidget_ConsOptZone->setWindowTitle("Construct Operation Zone");
+	//    QWidget* centralWidget = new QWidget;     //设置中央窗口，否则单独运行该界面DockWidget将充满主窗口
+	//    this->setCentralWidget(centralWidget);
+	//    this->resize(800,600);
+	QDockWidget* dockWidget_ConsOptZone = new QDockWidget;
+	dockWidget_ConsOptZone->setWindowTitle("Construct Operation Zone");
 
-    QWidget* subWidget = new QWidget;
-    CRVFigureSet* consOptZone = new CRVFigureSet(subWidget);
-    consOptZone->setObjectName("consOptZone");
+	QWidget* subWidget = new QWidget;
+	CRVFigureSet* consOptZone = new CRVFigureSet(subWidget);
+	consOptZone->setObjectName("consOptZone");
 
-    QVBoxLayout* vBoxLayout = new QVBoxLayout;
-    vBoxLayout->addWidget(consOptZone);
-    dockWidget_ConsOptZone->setWidget(consOptZone);
-    this->addDockWidget(Qt::BottomDockWidgetArea, dockWidget_ConsOptZone);  //鏇存敼娴姩绐楀彛浣嶇疆
+	QVBoxLayout* vBoxLayout = new QVBoxLayout;
+	vBoxLayout->addWidget(consOptZone);
+	dockWidget_ConsOptZone->setWidget(consOptZone);
+	this->addDockWidget(Qt::BottomDockWidgetArea, dockWidget_ConsOptZone);  //更改浮动窗口位置
 }
 
 COperationZoneRight::~COperationZoneRight()
