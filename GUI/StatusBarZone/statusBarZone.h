@@ -11,6 +11,11 @@
 #define CStatusBatZone_H
 
 #include <QStatusBar>
+#include <QWidget>
+#include <QPushButton>
+#include <QComboBox>
+#include <QLabel>
+
 class CStatusBarZone : public QStatusBar
 {
     Q_OBJECT
@@ -18,6 +23,21 @@ class CStatusBarZone : public QStatusBar
 public:
     explicit CStatusBarZone(QWidget *parent = 0);
     ~CStatusBarZone();
+
+    QPushButton *m_pPushButton_1;
+    QPushButton *m_pPushButton_2;
+    QPushButton *m_pPushButton_3;
+    QPushButton *m_pPushButton_4;
+    QPushButton *m_pPushButton_5;
+    QPushButton *m_pPushButton_6;
+
+    QComboBox *m_pComboBox_1;
+    QComboBox *m_pComboBox_2;
+    QComboBox *m_pComboBox_3;
+    QComboBox *m_pComboBox_4;
+    QComboBox *m_pComboBox_5;
+
+    QLabel *m_pBlank;
 };
 
 #endif // CStatusBatZone_H
