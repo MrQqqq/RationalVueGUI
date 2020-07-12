@@ -99,7 +99,7 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
 
     m_pCheckBox->setChecked(1);
     m_pCheckBox->setIcon(QIcon(":/icon/cir_blue.png"));
-    m_pCheckBox->setIconSize(QSize(20, 20));
+    m_pCheckBox->setIconSize(QSize(15, 15));
     m_pCheckBox->setText(QString("CIR1"));
 
     m_pCheckBox_2->setChecked(1);
