@@ -16,13 +16,17 @@ CMachineStatusCoordinate::CMachineStatusCoordinate(QWidget *parent) :
     ui->toolButton_8->setStyleSheet("border:0px");
     ui->toolButton_9->setStyleSheet("border:0px");
     ui->toolButton_10->setStyleSheet("border:0px");
-    ui->widget_2->setStyleSheet("background-color:#D2D6E1");
-//    ui->widget_1->setStyleSheet("background-color:#90949D");
+    ui->widget_2->setStyleSheet("background-color:#D2D6E1;border-radius:5px");
+    QPalette palette;
+    palette.setColor (QPalette::Background, QColor("#90949D"));
+    setPalette(palette);
+
     ui->lineEdit->setStyleSheet("background-color:#A8ACB7;border:1px solid gray;border-radius: 3px;padding: 1px 2px 1px 2px;");
     for(int i=0;i<=5;i++)
     {
         ui->comboBox->addItem(QString::number(i));
     }
+     ui->comboBox->setStyleSheet("QComboBox{border: 1px solid gray;border-radius: 3px;padding: 1px 2px 1px 2px;}QComboBox::editable{background-color:#8B8494}QComboBox::!editable{background-color:#C5C8DB}QComboBox::drop-down{width:25px;}QComboBox::down-arrow{image:url(:/res/triangle.png);}");
 }
 
 CMachineStatusCoordinate::~CMachineStatusCoordinate()

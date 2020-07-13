@@ -6,15 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>242</width>
-    <height>191</height>
+    <width>350</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>4</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
     <widget class="QWidget" name="widget_1" native="true">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -23,6 +38,21 @@
       </sizepolicy>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>4</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
       <item>
        <widget class="QToolButton" name="toolButton_1">
         <property name="text">
@@ -30,7 +60,7 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/button1.jpg</normaloff>:/:/res/button1.jpg</iconset>
+          <normaloff>:/res/button1.jpg</normaloff>:/res/button1.jpg</iconset>
         </property>
        </widget>
       </item>
@@ -41,7 +71,7 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/button2.jpg</normaloff>:/:/res/button2.jpg</iconset>
+          <normaloff>:/res/button2.jpg</normaloff>:/res/button2.jpg</iconset>
         </property>
        </widget>
       </item>
@@ -52,7 +82,7 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/button3.jpg</normaloff>:/:/res/button3.jpg</iconset>
+          <normaloff>:/res/button3.jpg</normaloff>:/res/button3.jpg</iconset>
         </property>
        </widget>
       </item>
@@ -66,8 +96,8 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>100</width>
-          <height>80</height>
+          <width>80</width>
+          <height>20</height>
          </size>
         </property>
         <property name="autoFillBackground">
@@ -79,7 +109,29 @@
        </widget>
       </item>
       <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="sizeAdjustPolicy">
          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
         </property>
@@ -93,9 +145,12 @@
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Preferred</enum>
+        </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>40</width>
+          <width>100</width>
           <height>20</height>
          </size>
         </property>
@@ -104,11 +159,35 @@
      </layout>
     </widget>
    </item>
-   <item>
+   <item row="1" column="0">
     <widget class="QWidget" name="widget_2" native="true">
      <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>4</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>4</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>10</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
       <item row="0" column="1">
        <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>120</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>黑体</family>
@@ -117,6 +196,9 @@
         </property>
         <property name="autoFillBackground">
          <bool>true</bool>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
         </property>
         <property name="text">
          <string>76.49</string>
@@ -125,17 +207,32 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
       <item row="0" column="3">
        <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>黑体</family>
           <pointsize>20</pointsize>
          </font>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
         </property>
         <property name="text">
          <string>0.00</string>
@@ -144,12 +241,18 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="label_6">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>黑体</family>
@@ -159,6 +262,9 @@
         <property name="autoFillBackground">
          <bool>true</bool>
         </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
         <property name="text">
          <string>0.00</string>
         </property>
@@ -166,7 +272,7 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
@@ -178,6 +284,9 @@
           <pointsize>20</pointsize>
          </font>
         </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
         <property name="text">
          <string>0.00</string>
         </property>
@@ -185,17 +294,26 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
       <item row="2" column="1">
        <widget class="QLabel" name="label_10">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>黑体</family>
           <pointsize>20</pointsize>
          </font>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
         </property>
         <property name="text">
          <string>-2.85</string>
@@ -204,7 +322,7 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
@@ -216,6 +334,12 @@
           <pointsize>20</pointsize>
          </font>
         </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
         <property name="text">
          <string>-0.00</string>
         </property>
@@ -223,12 +347,18 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
       <item row="3" column="1">
        <widget class="QLabel" name="label_14">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>黑体</family>
@@ -238,6 +368,9 @@
         <property name="autoFillBackground">
          <bool>true</bool>
         </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
         <property name="text">
          <string>0.00</string>
         </property>
@@ -245,7 +378,7 @@
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
        </widget>
       </item>
@@ -262,12 +395,12 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/X.jpg</normaloff>:/:/res/X.jpg</iconset>
+          <normaloff>:/res/X.jpg</normaloff>:/res/X.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>40</width>
+          <height>40</height>
          </size>
         </property>
        </widget>
@@ -279,12 +412,12 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/YY.jpg</normaloff>:/:/res/YY.jpg</iconset>
+          <normaloff>:/res/YY.jpg</normaloff>:/res/YY.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
@@ -302,12 +435,12 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/Y.jpg</normaloff>:/:/res/Y.jpg</iconset>
+          <normaloff>:/res/Y.jpg</normaloff>:/res/Y.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
@@ -319,12 +452,12 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/ZZ.jpg</normaloff>:/:/res/ZZ.jpg</iconset>
+          <normaloff>:/res/ZZ.jpg</normaloff>:/res/ZZ.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
@@ -342,12 +475,12 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/Z.jpg</normaloff>:/:/res/Z.jpg</iconset>
+          <normaloff>:/res/Z.jpg</normaloff>:/res/Z.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
@@ -362,29 +495,35 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/peo.jpg</normaloff>:/:/res/peo.jpg</iconset>
+          <normaloff>:/res/peo.jpg</normaloff>:/res/peo.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
       </item>
       <item row="3" column="0">
        <widget class="QToolButton" name="toolButton_9">
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>...</string>
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/XX.jpg</normaloff>:/:/res/XX.jpg</iconset>
+          <normaloff>:/res/XX.jpg</normaloff>:/res/XX.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
-          <width>50</width>
-          <height>50</height>
+          <width>30</width>
+          <height>30</height>
          </size>
         </property>
        </widget>
