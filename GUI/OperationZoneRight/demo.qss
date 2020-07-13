@@ -1,0 +1,27 @@
+#dockWidgetContents{
+    background-color:rgb(144,148,156);
+}
+
+#lineEdit_ShrinkFactor{
+    background-color:rgb(168,172,182);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+
+#LineEdit_LSEOrig,#LineEdit_LSENew{
+    background-color:rgb(168,172,182);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
+
+OperationZoneRight::QPushButtons{
+    background-color:rgb(160,160,160);
+    selection-color: white;
+    border: 2px groove gray;
+    border-radius: 4px;
+    padding: 0px 0px;
+}
