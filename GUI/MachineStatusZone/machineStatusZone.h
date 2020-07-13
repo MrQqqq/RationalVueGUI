@@ -9,7 +9,6 @@ class CMachineStatusZone;
 
 class CMachineStatusZone : public QWidget
 {
-    Q_OBJECT
 
 public:
     explicit CMachineStatusZone(QWidget *parent = 0);

@@ -21,7 +21,6 @@ QT_END_NAMESPACE
 
 class CDataZoneLeft : public QDockWidget
 {
-    Q_OBJECT
 
 public:
     CDataZoneLeft(QWidget *parent = nullptr);

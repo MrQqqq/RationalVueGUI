@@ -17,7 +17,6 @@
 #include <QVBoxLayout>
 class COperationZoneRight : public QMainWindow
 {
-    Q_OBJECT
 
 public:
     explicit COperationZoneRight(QWidget *parent = 0);

@@ -81,30 +81,78 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
 
     //分割主窗口
     QSplitter *p_splitterMain = new QSplitter(Qt::Horizontal,this);
-    p_splitterMain->setStretchFactor(0,1);
+    
 
     //主窗口的左边
     QSplitter *p_splitterMainLeft = new QSplitter(Qt::Vertical,p_splitterMain);
+	QSizePolicy m_policy = p_splitterMainLeft->sizePolicy();
+    m_policy.setHorizontalStretch(3);
+	p_splitterMainLeft->setSizePolicy(m_policy);
+
     //DataZone
     QSplitter *p_splitterDataZone = new QSplitter(Qt::Horizontal,p_splitterMainLeft);
+	m_policy = p_splitterDataZone->sizePolicy();
+    m_policy.setVerticalStretch(1);
+	p_splitterDataZone->setSizePolicy(m_policy);
+
+	m_policy = p_dataZoneLeft->sizePolicy();
+    m_policy.setHorizontalStretch(1);
+	p_dataZoneLeft->setSizePolicy(m_policy);
+    
+	m_policy = p_dataZoneRight->sizePolicy();
+    m_policy.setHorizontalStretch(1);
+	p_dataZoneRight->setSizePolicy(m_policy);
     p_splitterDataZone->addWidget(p_dataZoneLeft);
     p_splitterDataZone->addWidget(p_dataZoneRight);
     p_splitterMainLeft->addWidget(p_splitterDataZone);
 
+	m_policy = p_dimensionReportZone->sizePolicy();
+    m_policy.setVerticalStretch(1);
+	p_dimensionReportZone->setSizePolicy(m_policy);
     //DimensionReportZone
     p_splitterMainLeft->addWidget(p_dimensionReportZone);
 
     //主窗口右边
     QSplitter *p_splitterMainRight = new QSplitter(Qt::Vertical,p_splitterMain);
+	m_policy = p_splitterMainRight->sizePolicy();
+    m_policy.setHorizontalStretch(4);
+	p_splitterMainRight->setSizePolicy(m_policy);
+
 
     //右边上面部分GraphiceZone和PainZone
     QSplitter *p_splitterMainRightUp = new QSplitter(Qt::Horizontal,p_splitterMainRight);
+	m_policy = p_splitterMainRightUp->sizePolicy();
+    m_policy.setVerticalStretch(3);
+	p_splitterMainRightUp->setSizePolicy(m_policy);
+	
+	m_policy = p_graphiceZone->sizePolicy();
+    m_policy.setHorizontalStretch(3);
+	p_graphiceZone->setSizePolicy(m_policy);
+
+	m_policy = p_paintZone->sizePolicy();
+    m_policy.setHorizontalStretch(1);
+	p_paintZone->setSizePolicy(m_policy);
     p_splitterMainRightUp->addWidget(p_graphiceZone);
     p_splitterMainRightUp->addWidget(p_paintZone);
     p_splitterMainRight->addWidget(p_splitterMainRightUp);
 
     //右边下部分
     QSplitter *p_splitterMainRightBottom = new QSplitter(Qt::Horizontal,p_splitterMainRight);
+	m_policy = p_splitterMainRightBottom->sizePolicy();
+    m_policy.setVerticalStretch(1);
+	p_splitterMainRightBottom->setSizePolicy(m_policy);
+	
+	m_policy = p_operationZoneLeft->sizePolicy();
+    m_policy.setHorizontalStretch(1);
+	p_operationZoneLeft->setSizePolicy(m_policy);
+    
+	m_policy = p_operationZoneRight->sizePolicy();
+    m_policy.setHorizontalStretch(2);
+	p_operationZoneRight->setSizePolicy(m_policy);
+
+	m_policy = p_machineStatusZone->sizePolicy();
+    m_policy.setHorizontalStretch(1);
+	p_machineStatusZone->setSizePolicy(m_policy);
     p_splitterMainRightBottom->addWidget(p_operationZoneLeft);
     p_splitterMainRightBottom->addWidget(p_operationZoneRight);
 	p_splitterMainRightBottom->addWidget(p_machineStatusZone);
@@ -114,6 +162,7 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
     p_splitterMain->addWidget(p_splitterMainRight);
 
     setCentralWidget(p_splitterMain);
+	//设置状态栏
     setStatusBar(p_statusBarZone);
 
     showMaximized();
