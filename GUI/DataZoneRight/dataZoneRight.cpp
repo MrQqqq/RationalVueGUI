@@ -1,12 +1,12 @@
-#include "datazoneright.h"
-#include "ui_datazoneright.h"
+#include "dataZoneRight.h"
+#include "ui_dataZoneRight.h"
 #include <QFile>
 #include <QTreeWidgetItem>
 #include <QDebug>
 #include <QInputDialog>
 #include <QMessageBox>
-
-CDataZoneRight::CDataZoneRight(QWidget *parent): QMainWindow(parent), ui(new Ui::CdataZoneRight)
+#include <QTextEdit>
+CDataZoneRight::CDataZoneRight(QWidget *parent): QDockWidget(parent), ui(new Ui::CDataZoneRight)
 {
     ui->setupUi(this);
     QFile file(":/css/styleSheet.css");
@@ -14,7 +14,6 @@ CDataZoneRight::CDataZoneRight(QWidget *parent): QMainWindow(parent), ui(new Ui:
     QTextStream filetext(&file);
     QString stylesheet = filetext.readAll();
     this->setStyleSheet(stylesheet);
-
     ui->treeWidget->setHeaderLabel("label");
     ui->treeWidget_2->setHeaderLabel("parent label");
 
