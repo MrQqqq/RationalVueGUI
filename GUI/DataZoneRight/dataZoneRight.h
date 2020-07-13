@@ -1,37 +1,35 @@
-#ifndef DATAZONERIGHT_H
-#define DATAZONERIGHT_H
+#ifndef DOCKWIDGET_H
+#define DOCKWIDGET_H
 
-#include <QMainWindow>
+#include <QDockWidget>
 #include <qmenu.h>
 #include <qaction.h>
 #include <QTreeWidgetItem>
 #include <QContextMenuEvent>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class CdataZoneRight; }
-QT_END_NAMESPACE
+namespace Ui {
+class CDataZoneRight;
+}
 
-class CDataZoneRight : public QMainWindow
+class CDataZoneRight : public QDockWidget
 {
+    Q_OBJECT
 
 public:
-	CDataZoneRight(QWidget *parent = nullptr);
+    explicit CDataZoneRight(QWidget *parent = nullptr);
     ~CDataZoneRight();
-
     void initTreeWidget();
-
     void createMenu();
-
-protected:
-    void contextMenuEvent(QContextMenuEvent *event);
 
 private slots:
     void onDelAction();
     void onAddAction();
 
-private:
-    Ui::CdataZoneRight *ui;
+protected:
+    void contextMenuEvent(QContextMenuEvent *event);
 
+private:
+    Ui::CDataZoneRight *ui;
     QMenu *m_PopMenu;
     QMenu *m_AddMenu;
     QMenu *m_DelMenu;
@@ -39,4 +37,5 @@ private:
     QAction *m_AddAction;
     QAction *m_DelAction;
 };
-#endif // CDATAZONELEFT_H
+
+#endif // DOCKWIDGET_H

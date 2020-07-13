@@ -1,34 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0'?>
 <ui version="4.0">
  <class>CMachineStatusZone</class>
- <widget class="QMainWindow" name="CMachineStatusZone">
+ <widget name="CMachineStatusZone" class="QDockWidget">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>DockWidget</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>160</y>
-      <width>41</width>
-      <height>9</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-  </widget>
+  <widget name="dockWidgetContents" class="QWidget"/>
  </widget>
- <resources/>
- <connections/>
 </ui>

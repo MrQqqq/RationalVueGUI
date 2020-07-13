@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CdataZoneRight</class>
- <widget class="QMainWindow" name="CdataZoneRight">
+ <class>CDataZoneRight</class>
+ <widget class="QDockWidget" name="CDataZoneRight">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>632</width>
-    <height>585</height>
+    <width>401</width>
+    <height>475</height>
    </rect>
   </property>
-  <property name="maximumSize">
-   <size>
-    <width>16777215</width>
-    <height>16777215</height>
-   </size>
-  </property>
   <property name="windowTitle">
-   <string>CdataZoneLeft</string>
+   <string>DataZoneRight</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="dockWidgetContents">
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>471</width>
-      <height>501</height>
+      <width>401</width>
+      <height>451</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <property name="spacing">
-      <number>0</number>
+      <number>1</number>
      </property>
      <item>
       <widget class="QTreeWidget" name="treeWidget">

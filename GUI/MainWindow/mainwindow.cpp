@@ -19,15 +19,17 @@
 #include "SARibbonButtonGroupWidget.h"
 
 #include<QSplitter>
-#include"dataZoneLeft.h"
-#include"dataZoneRight.h"
-#include"dimensionReportZone.h"
-#include"graphiceZone.h"
+#include "dataZoneLeft.h"
+#include "dataZoneRight.h"
+#include "dimensionReportZone.h"
+#include "graphiceZone.h"
+#include "lightControl.h"
 #include "machineStatusZone.h"
 #include "operationZoneRight.h"
 #include "operationZoneLeft.h"
 #include "paintZone.h"
 #include "statusBarZone.h"
+
 #define PRINT_COST(ElapsedTimer,LastTime,STR) \
     do{\
     int ___TMP_INT = ElapsedTimer.elapsed();\
@@ -42,8 +44,6 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
     int lastTimes = 0;
     cost.start();
     setWindowTitle(QStringLiteral("ribbon test"));
-    m_edit = new QTextEdit(this);
-    setCentralWidget(m_edit);
     PRINT_COST(cost,lastTimes,"setCentralWidget & setWindowTitle");
     SARibbonBar* ribbon = ribbonBar();
     QFont f = ribbon->font();
@@ -62,7 +62,188 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
     SARibbonCategory* contextCategoryPage2 = m_contextCategory->addCategoryPage(QStringLiteral("Page1"));
     PRINT_COST(cost,lastTimes,"add contextCategory page");
 #endif
-    ribbon->quickAccessBar()->addButton(new QAction(QIcon(":/icon/icon/chartDataManager.png"),"action1",this));
+	//添加菜单
+	QMenu *p_fileMenu = new QMenu(this);
+	setStyleSheet("QMenu::item:selected {background-color: #654321;}QMenu{background-color: #88777E;}");
+	QAction *p_fileMenu_new = new QAction(p_fileMenu);
+	QAction *p_fileMenu_open = new QAction(p_fileMenu);
+	QAction *p_fileMenu_save = new QAction(p_fileMenu);
+	QAction *p_fileMenu_saveas = new QAction(p_fileMenu);
+	QAction *p_fileMenu_solutionFunLock = new QAction(p_fileMenu);
+	QAction *p_fileMenu_importCAD = new QAction(p_fileMenu);
+	QAction *p_fileMenu_exportCAD = new QAction(p_fileMenu);
+	QAction *p_fileMenu_importFeatures = new QAction(p_fileMenu);
+	QAction *p_fileMenu_export = new QAction(p_fileMenu);
+	QAction *p_fileMenu_options = new QAction(p_fileMenu);
+	QAction *p_fileMenu_window = new QAction(p_fileMenu);
+	QAction *p_fileMenu_help = new QAction(p_fileMenu);
+	QAction *p_fileMenu_recent = new QAction(p_fileMenu);
+	QAction *p_fileMenu_exit = new QAction(p_fileMenu);
+
+	//设置action文字
+	p_fileMenu_new->setText("New");
+	p_fileMenu_new->setShortcut(QKeySequence(QLatin1String("Ctrl+N")));
+	p_fileMenu_open->setText("Open Solution");
+	p_fileMenu_save->setText("Save Solution");
+	p_fileMenu_save->setShortcut(QKeySequence(QLatin1String("Ctrl+S")));
+	p_fileMenu_saveas->setText("Save Solution As");
+	p_fileMenu_solutionFunLock->setText("Solution Function Lock");
+	p_fileMenu_importCAD->setText("Import CAD");
+	p_fileMenu_exportCAD->setText("Export CAD");
+	p_fileMenu_importFeatures->setText("Import Features");
+	p_fileMenu_export->setText("Export");
+	p_fileMenu_options->setText("Options");
+	p_fileMenu_window->setText("Window");
+	p_fileMenu_help->setText("Help");
+	p_fileMenu_recent->setText("Recent");
+	p_fileMenu_exit->setText("Exit");
+
+	p_fileMenu->addAction(p_fileMenu_new);
+	p_fileMenu->addAction(p_fileMenu_open);
+	p_fileMenu->addAction(p_fileMenu_save);
+	p_fileMenu->addAction(p_fileMenu_saveas);
+	p_fileMenu->addAction(p_fileMenu_solutionFunLock);
+	p_fileMenu->addSeparator();
+	p_fileMenu->addAction(p_fileMenu_importCAD);
+	p_fileMenu->addAction(p_fileMenu_exportCAD);
+	p_fileMenu->addSeparator();
+	p_fileMenu->addAction(p_fileMenu_importFeatures);
+	p_fileMenu->addAction(p_fileMenu_export);
+	p_fileMenu->addSeparator();
+	p_fileMenu->addAction(p_fileMenu_options);
+	p_fileMenu->addAction(p_fileMenu_window);
+	p_fileMenu->addAction(p_fileMenu_help);
+	p_fileMenu->addSeparator();
+	p_fileMenu->addAction(p_fileMenu_recent);
+	p_fileMenu->addAction(p_fileMenu_exit);
+
+
+
+	//添加子菜单
+	//import CAD的子菜单
+	QMenu *p_childfileMenu_importCAD = new QMenu(this);
+	QAction *p_action_iges = new QAction("IGES...", p_childfileMenu_importCAD);
+	QAction *p_action_dxf = new QAction("DXF...", p_childfileMenu_importCAD);
+	QAction *p_action_step = new QAction("STEP", p_childfileMenu_importCAD);
+	QAction *p_action_parasolid = new QAction("ParaSolid XT...", p_childfileMenu_importCAD);
+	QAction *p_action_catia = new QAction("CATIA...", p_childfileMenu_importCAD);
+	QAction *p_action_ug = new QAction("UG...", p_childfileMenu_importCAD);
+	QAction *p_action_proe = new QAction("ProE...", p_childfileMenu_importCAD);
+	QAction *p_action_solidwork = new QAction("SolidWorks...", p_childfileMenu_importCAD);
+	QAction *p_action_jt3d = new QAction("JT3D...", p_childfileMenu_importCAD);
+	QAction *p_action_inventor = new QAction("Inventor 3D", p_childfileMenu_importCAD);
+	QAction *p_action_solidedge = new QAction("SolidEdge...", p_childfileMenu_importCAD);
+	QAction *p_action_drill = new QAction("Drill...", p_childfileMenu_importCAD);
+	p_fileMenu_importCAD->setMenu(p_childfileMenu_importCAD);
+	p_childfileMenu_importCAD->addAction(p_action_iges);
+	p_childfileMenu_importCAD->addAction(p_action_dxf);
+	p_childfileMenu_importCAD->addAction(p_action_step);
+	p_childfileMenu_importCAD->addAction(p_action_parasolid);
+	p_childfileMenu_importCAD->addAction(p_action_catia);
+	p_childfileMenu_importCAD->addAction(p_action_ug);
+	p_childfileMenu_importCAD->addAction(p_action_proe);
+	p_childfileMenu_importCAD->addAction(p_action_solidwork);
+	p_childfileMenu_importCAD->addAction(p_action_jt3d);
+	p_childfileMenu_importCAD->addAction(p_action_inventor);
+	p_childfileMenu_importCAD->addAction(p_action_solidedge);
+	p_childfileMenu_importCAD->addAction(p_action_drill);
+
+	//exportCAD子菜单
+	QMenu *p_childfileMenu_exportCAD = new QMenu(this);
+	QAction *p_action_exportCAD_igse = new QAction("IGES...", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_igse);
+	QAction *p_action_exportCAD_dxf = new QAction("DXF...", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_dxf);
+	p_childfileMenu_exportCAD->addSeparator();
+	QAction *p_action_exportCAD_includeNom = new QAction("Include Nom Features", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_includeNom);
+	QAction *p_action_exportCAD_includeAct = new QAction("Include Act Features", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_includeAct);
+	QAction *p_action_exportCAD_includeMea = new QAction("IGES...", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_includeMea);
+	QAction *p_action_exportCAD_export = new QAction("Export measurement points only", p_childfileMenu_exportCAD);
+	p_childfileMenu_exportCAD->addAction(p_action_exportCAD_export);
+
+	p_fileMenu_exportCAD->setMenu(p_childfileMenu_exportCAD);
+	//import Features子菜单
+	QMenu *p_childfileMenu_importFeatures = new QMenu(this);
+	QAction *p_action_fromText = new QAction("From Text File...", p_childfileMenu_importFeatures);
+	QAction *p_action_fromDXF = new QAction("From DXF...", p_childfileMenu_importFeatures);
+	QAction *p_action_with = new QAction("With Graphics", p_childfileMenu_importFeatures);
+	QAction *p_action_importCircle = new QAction("Import Circle", p_childfileMenu_importFeatures);
+	QAction *p_action_importLine = new QAction("Import Line", p_childfileMenu_importFeatures);
+	QAction *p_action_importCurve = new QAction("Import Curve", p_childfileMenu_importFeatures);
+
+	p_childfileMenu_importFeatures->addAction(p_action_fromText);
+	p_childfileMenu_importFeatures->addAction(p_action_fromDXF);
+	p_childfileMenu_importFeatures->addAction(p_action_with);
+	p_childfileMenu_importFeatures->addAction(p_action_importCircle);
+	p_childfileMenu_importFeatures->addAction(p_action_importLine);
+	p_childfileMenu_importFeatures->addAction(p_action_importCurve);
+	p_fileMenu_importFeatures->setMenu(p_childfileMenu_importFeatures);
+
+	//export子菜单
+	QMenu *p_childfileMenu_export = new QMenu(this);
+	QAction *p_action_exportAsQ = new QAction("Export as Q-Das");
+	p_childfileMenu_export->addAction(p_action_exportAsQ);
+	p_fileMenu_export->setMenu(p_childfileMenu_export);
+
+	//options子菜单
+	QMenu *p_childfileMenu_options = new QMenu(this);
+	QAction *p_action_App = new QAction("Application Setting", p_childfileMenu_options);
+	QAction *p_action_Imp = new QAction("Import Application Setup", p_childfileMenu_options);
+	QAction *p_action_Exp = new QAction("Export Application Setup", p_childfileMenu_options);
+
+	p_childfileMenu_options->addAction(p_action_App);
+	p_childfileMenu_options->addAction(p_action_Imp);
+	p_childfileMenu_options->addAction(p_action_Exp);
+	p_fileMenu_options->setMenu(p_childfileMenu_options);
+
+	//Window子菜单
+	QMenu *p_childfileMenu_window = new QMenu(this);
+	QAction *p_action_Restore = new QAction("Restore default window position", p_childfileMenu_window);
+	p_action_Restore->setShortcut(QKeySequence(QLatin1String("Ctrl+R")));
+	QAction *p_action_SwitchI = new QAction("Switch image tool window position", p_childfileMenu_window);
+	QAction *p_action_SwitchG = new QAction("Switch graphics tool window position", p_childfileMenu_window);
+	QAction *p_action_SwitchD = new QAction("Switch data window position", p_childfileMenu_window);
+	p_action_SwitchD->setShortcut(QKeySequence(QLatin1String("Ctrl+E")));
+	QAction *p_action_IO = new QAction("I/O monitor window", p_childfileMenu_window);
+	QAction *p_action_Shortcut = new QAction("Shortcut window", p_childfileMenu_window);
+	p_action_Shortcut->setShortcut(QKeySequence(QLatin1String("Ctrl*2")));
+
+	p_childfileMenu_window->addAction(p_action_Restore);
+	p_childfileMenu_window->addAction(p_action_SwitchI);
+	p_childfileMenu_window->addAction(p_action_SwitchG);
+	p_childfileMenu_window->addAction(p_action_SwitchD);
+	p_childfileMenu_window->addSeparator();
+	p_childfileMenu_window->addAction(p_action_IO);
+	p_childfileMenu_window->addAction(p_action_Shortcut);
+	p_fileMenu_window->setMenu(p_childfileMenu_window);
+
+	//help子菜单
+	QMenu *p_childfileMenu_help = new QMenu(this);
+	QAction *p_action_help = new QAction("Help", p_childfileMenu_help);
+	QAction *p_action_ShowL = new QAction("Show License Agreement", p_childfileMenu_help);
+	QAction *p_action_ShowA = new QAction("Show App Log Viewer", p_childfileMenu_help);
+	QAction *p_action_tools = new QAction("Support Tools", p_childfileMenu_help);
+	QAction *p_action_about = new QAction("About RationalVue...", p_childfileMenu_help);
+	p_childfileMenu_help->addAction(p_action_help);
+	p_childfileMenu_help->addAction(p_action_ShowL);
+	p_childfileMenu_help->addAction(p_action_ShowA);
+	p_childfileMenu_help->addAction(p_action_tools);
+	p_childfileMenu_help->addAction(p_action_about);
+
+	p_fileMenu_help->setMenu(p_childfileMenu_help);
+
+
+
+	//recent solutions子菜单
+	QMenu *p_childfileMenu_recent = new QMenu(this);
+	p_fileMenu_recent->setMenu(p_childfileMenu_recent);
+
+	QAction *p_action_quickAccess = new QAction(QIcon(":/icon/icon/chartDataManager.png"), "action1", this);
+	p_action_quickAccess->setMenu(p_fileMenu);
+	ribbon->quickAccessBar()->addButton(p_action_quickAccess);
     ribbon->quickAccessBar()->addButton(new QAction(QIcon(":/icon/icon/figureIcon.png"),"action2",this));
     ribbon->quickAccessBar()->addButton(new QAction(QIcon(":/icon/icon/information.png"),"action3",this));
     ribbon->quickAccessBar()->addButton(new QAction(QIcon(":/icon/icon/inRangDataRemove.png"),"action4",this));
@@ -77,95 +258,32 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
     COperationZoneRight *p_operationZoneRight = new COperationZoneRight();
     CPaintZone *p_paintZone = new CPaintZone();
     CStatusBarZone *p_statusBarZone = new CStatusBarZone();
-
-
-    //分割主窗口
-    QSplitter *p_splitterMain = new QSplitter(Qt::Horizontal,this);
-    
-
-    //主窗口的左边
-    QSplitter *p_splitterMainLeft = new QSplitter(Qt::Vertical,p_splitterMain);
-	QSizePolicy m_policy = p_splitterMainLeft->sizePolicy();
-    m_policy.setHorizontalStretch(3);
-	p_splitterMainLeft->setSizePolicy(m_policy);
-
-    //DataZone
-    QSplitter *p_splitterDataZone = new QSplitter(Qt::Horizontal,p_splitterMainLeft);
-	m_policy = p_splitterDataZone->sizePolicy();
-    m_policy.setVerticalStretch(1);
-	p_splitterDataZone->setSizePolicy(m_policy);
-
-	m_policy = p_dataZoneLeft->sizePolicy();
-    m_policy.setHorizontalStretch(1);
-	p_dataZoneLeft->setSizePolicy(m_policy);
-    
-	m_policy = p_dataZoneRight->sizePolicy();
-    m_policy.setHorizontalStretch(1);
-	p_dataZoneRight->setSizePolicy(m_policy);
-    p_splitterDataZone->addWidget(p_dataZoneLeft);
-    p_splitterDataZone->addWidget(p_dataZoneRight);
-    p_splitterMainLeft->addWidget(p_splitterDataZone);
-
-	m_policy = p_dimensionReportZone->sizePolicy();
-    m_policy.setVerticalStretch(1);
-	p_dimensionReportZone->setSizePolicy(m_policy);
-    //DimensionReportZone
-    p_splitterMainLeft->addWidget(p_dimensionReportZone);
-
-    //主窗口右边
-    QSplitter *p_splitterMainRight = new QSplitter(Qt::Vertical,p_splitterMain);
-	m_policy = p_splitterMainRight->sizePolicy();
-    m_policy.setHorizontalStretch(4);
-	p_splitterMainRight->setSizePolicy(m_policy);
-
-
-    //右边上面部分GraphiceZone和PainZone
-    QSplitter *p_splitterMainRightUp = new QSplitter(Qt::Horizontal,p_splitterMainRight);
-	m_policy = p_splitterMainRightUp->sizePolicy();
-    m_policy.setVerticalStretch(3);
-	p_splitterMainRightUp->setSizePolicy(m_policy);
+	CLightControl *p_lightControl = new CLightControl();
 	
-	m_policy = p_graphiceZone->sizePolicy();
-    m_policy.setHorizontalStretch(3);
-	p_graphiceZone->setSizePolicy(m_policy);
+	p_dataZoneLeft->AllDockWidgetFeatures;
+	p_dataZoneRight->AllDockWidgetFeatures;
+	p_dimensionReportZone->AllDockWidgetFeatures;
+	p_graphiceZone->AllDockWidgetFeatures;
+	p_machineStatusZone->AllDockWidgetFeatures;
+	p_operationZoneLeft->AllDockWidgetFeatures;
+	p_operationZoneRight->AllDockWidgetFeatures;
+	p_paintZone->AllDockWidgetFeatures;
+	p_lightControl->AllDockWidgetFeatures;
 
-	m_policy = p_paintZone->sizePolicy();
-    m_policy.setHorizontalStretch(1);
-	p_paintZone->setSizePolicy(m_policy);
-    p_splitterMainRightUp->addWidget(p_graphiceZone);
-    p_splitterMainRightUp->addWidget(p_paintZone);
-    p_splitterMainRight->addWidget(p_splitterMainRightUp);
-
-    //右边下部分
-    QSplitter *p_splitterMainRightBottom = new QSplitter(Qt::Horizontal,p_splitterMainRight);
-	m_policy = p_splitterMainRightBottom->sizePolicy();
-    m_policy.setVerticalStretch(1);
-	p_splitterMainRightBottom->setSizePolicy(m_policy);
+	addDockWidget(Qt::LeftDockWidgetArea, p_dimensionReportZone);
+	splitDockWidget(p_dimensionReportZone, p_graphiceZone, Qt::Horizontal);
+	splitDockWidget(p_graphiceZone,p_paintZone, Qt::Horizontal);
+	splitDockWidget(p_dimensionReportZone,p_dataZoneLeft, Qt::Vertical);
+	splitDockWidget(p_dataZoneLeft,p_dataZoneRight,Qt::Horizontal);
+	splitDockWidget(p_graphiceZone,p_operationZoneLeft,Qt::Vertical);
+	splitDockWidget(p_operationZoneLeft,p_operationZoneRight,Qt::Horizontal);
+	splitDockWidget(p_paintZone,p_lightControl,Qt::Vertical);
+	splitDockWidget(p_lightControl,p_machineStatusZone,Qt::Vertical);
 	
-	m_policy = p_operationZoneLeft->sizePolicy();
-    m_policy.setHorizontalStretch(1);
-	p_operationZoneLeft->setSizePolicy(m_policy);
-    
-	m_policy = p_operationZoneRight->sizePolicy();
-    m_policy.setHorizontalStretch(2);
-	p_operationZoneRight->setSizePolicy(m_policy);
 
-	m_policy = p_machineStatusZone->sizePolicy();
-    m_policy.setHorizontalStretch(1);
-	p_machineStatusZone->setSizePolicy(m_policy);
-    p_splitterMainRightBottom->addWidget(p_operationZoneLeft);
-    p_splitterMainRightBottom->addWidget(p_operationZoneRight);
-	p_splitterMainRightBottom->addWidget(p_machineStatusZone);
-    p_splitterMainRight->addWidget(p_splitterMainRightBottom);
-
-    p_splitterMain->addWidget(p_splitterMainLeft);
-    p_splitterMain->addWidget(p_splitterMainRight);
-
-    setCentralWidget(p_splitterMain);
-	//设置状态栏
     setStatusBar(p_statusBarZone);
 
-    showMaximized();
+	showNormal();
 }
 
 void MainWindow::onShowContextCategory(bool on)

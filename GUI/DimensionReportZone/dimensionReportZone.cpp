@@ -1,24 +1,14 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:50
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 17:24:37
- * @FilePath: \QTCreateByCMake\GUI\DimensionReportZone\dimensionReportZone.cpp
- */ 
 #include "dimensionReportZone.h"
-#include <QTextEdit>
+#include "ui_dimensionReportZone.h"
+
 CDimensionReportZone::CDimensionReportZone(QWidget *parent) :
-    QMainWindow(parent)
+    QDockWidget(parent),
+    ui(new Ui::CDimensionReportZone)
 {
-    
-    QTextEdit *textArea = new QTextEdit(this);
-    textArea->setText("Widget");
-    setCentralWidget(textArea);
+    ui->setupUi(this);
 }
 
 CDimensionReportZone::~CDimensionReportZone()
 {
-    
+    delete ui;
 }

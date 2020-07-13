@@ -19,8 +19,9 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class CDataZoneLeft; }
 QT_END_NAMESPACE
 
-class CDataZoneLeft : public QWidget
+class CDataZoneLeft : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     CDataZoneLeft(QWidget *parent = nullptr);

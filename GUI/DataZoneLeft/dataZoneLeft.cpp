@@ -2,10 +2,11 @@
 #include "ui_dataZoneLeft.h"
 
 CDataZoneLeft::CDataZoneLeft(QWidget *parent)
-    : QWidget(parent)
+    : QDockWidget(parent)
     , ui(new Ui::CDataZoneLeft)
 {
     ui->setupUi(this);
+
 
     m_pVBoxLayout = new QVBoxLayout();
 
@@ -23,40 +24,40 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
     m_pToolButton_9 = new QToolButton();
 
     m_pToolButton->setIcon(QIcon(":/icon/1.png"));
-    m_pToolButton->setFixedSize(25, 25);
-    m_pToolButton->setIconSize(QSize(25, 25));
+    m_pToolButton->setFixedSize(30, 30);
+    m_pToolButton->setIconSize(QSize(30, 30));
 
     m_pToolButton_2->setIcon(QIcon(":/icon/2.png"));
-    m_pToolButton_2->setFixedSize(25, 25);
-    m_pToolButton_2->setIconSize(QSize(25, 25));
+    m_pToolButton_2->setFixedSize(30, 30);
+    m_pToolButton_2->setIconSize(QSize(30, 30));
 
     m_pToolButton_3->setIcon(QIcon(":/icon/3.png"));
-    m_pToolButton_3->setFixedSize(25, 25);
-    m_pToolButton_3->setIconSize(QSize(25, 25));
+    m_pToolButton_3->setFixedSize(30, 30);
+    m_pToolButton_3->setIconSize(QSize(30, 30));
 
     m_pToolButton_4->setIcon(QIcon(":/icon/4.png"));
-    m_pToolButton_4->setFixedSize(25, 25);
-    m_pToolButton_4->setIconSize(QSize(25, 25));
+    m_pToolButton_4->setFixedSize(30, 30);
+    m_pToolButton_4->setIconSize(QSize(30, 30));
 
     m_pToolButton_5->setIcon(QIcon(":/icon/5.png"));
-    m_pToolButton_5->setFixedSize(25, 25);
-    m_pToolButton_5->setIconSize(QSize(25, 25));
+    m_pToolButton_5->setFixedSize(30, 30);
+    m_pToolButton_5->setIconSize(QSize(30, 30));
 
     m_pToolButton_6->setIcon(QIcon(":/icon/6.png"));
-    m_pToolButton_6->setFixedSize(25, 25);
-    m_pToolButton_6->setIconSize(QSize(25, 25));
+    m_pToolButton_6->setFixedSize(30, 30);
+    m_pToolButton_6->setIconSize(QSize(30, 30));
 
     m_pToolButton_7->setIcon(QIcon(":/icon/7.png"));
-    m_pToolButton_7->setFixedSize(25, 25);
-    m_pToolButton_7->setIconSize(QSize(25, 25));
+    m_pToolButton_7->setFixedSize(30, 30);
+    m_pToolButton_7->setIconSize(QSize(30, 30));
 
     m_pToolButton_8->setIcon(QIcon(":/icon/8.png"));
-    m_pToolButton_8->setFixedSize(25, 25);
-    m_pToolButton_8->setIconSize(QSize(25, 25));
+    m_pToolButton_8->setFixedSize(30, 30);
+    m_pToolButton_8->setIconSize(QSize(30, 30));
 
     m_pToolButton_9->setIcon(QIcon(":/icon/9.png"));
-    m_pToolButton_9->setFixedSize(25, 25);
-    m_pToolButton_9->setIconSize(QSize(25, 25));
+    m_pToolButton_9->setFixedSize(30, 30);
+    m_pToolButton_9->setIconSize(QSize(30, 30));
 
     m_pVBoxLayout->addWidget(m_pToolButton);
     m_pVBoxLayout->addWidget(m_pToolButton_2);
@@ -99,47 +100,47 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
 
     m_pCheckBox->setChecked(1);
     m_pCheckBox->setIcon(QIcon(":/icon/cir_blue.png"));
-    m_pCheckBox->setIconSize(QSize(15, 15));
+    m_pCheckBox->setIconSize(QSize(20, 20));
     m_pCheckBox->setText(QString("CIR1"));
 
     m_pCheckBox_2->setChecked(1);
     m_pCheckBox_2->setIcon(QIcon(":/icon/cir_red.png"));
-    m_pCheckBox_2->setIconSize(QSize(15, 15));
+    m_pCheckBox_2->setIconSize(QSize(20, 20));
     m_pCheckBox_2->setText(QString("CIR2"));
 
     m_pCheckBox_3->setChecked(1);
     m_pCheckBox_3->setIcon(QIcon(":/icon/ln_green.png"));
-    m_pCheckBox_3->setIconSize(QSize(15, 15));
+    m_pCheckBox_3->setIconSize(QSize(20, 20));
     m_pCheckBox_3->setText(QString("LN1"));
 
     m_pCheckBox_4->setChecked(1);
     m_pCheckBox_4->setIcon(QIcon(":/icon/ln_red.png"));
-    m_pCheckBox_4->setIconSize(QSize(15, 15));
+    m_pCheckBox_4->setIconSize(QSize(20, 20));
     m_pCheckBox_4->setText(QString("LN2"));
 
     m_pCheckBox_5->setChecked(1);
     m_pCheckBox_5->setIcon(QIcon(":/icon/arc_red.png"));
-    m_pCheckBox_5->setIconSize(QSize(15, 15));
+    m_pCheckBox_5->setIconSize(QSize(20, 20));
     m_pCheckBox_5->setText(QString("ARC1"));
 
     m_pCheckBox_6->setChecked(1);
     m_pCheckBox_6->setIcon(QIcon(":/icon/ln_red.png"));
-    m_pCheckBox_6->setIconSize(QSize(15, 15));
+    m_pCheckBox_6->setIconSize(QSize(20, 20));
     m_pCheckBox_6->setText(QString("LN3"));
 
     m_pCheckBox_7->setChecked(1);
     m_pCheckBox_7->setIcon(QIcon(":/icon/goto.png"));
-    m_pCheckBox_7->setIconSize(QSize(15, 15));
+    m_pCheckBox_7->setIconSize(QSize(20, 20));
     m_pCheckBox_7->setText(QString("GOTO1"));
 
     m_pCheckBox_8->setChecked(1);
     m_pCheckBox_8->setIcon(QIcon(":/icon/macro.png"));
-    m_pCheckBox_8->setIconSize(QSize(15, 15));
+    m_pCheckBox_8->setIconSize(QSize(20, 20));
     m_pCheckBox_8->setText(QString("Macro1"));
 
     m_pCheckBox_9->setChecked(1);
     m_pCheckBox_9->setIcon(QIcon(":/icon/output.png"));
-    m_pCheckBox_9->setIconSize(QSize(15, 15));
+    m_pCheckBox_9->setIconSize(QSize(20, 20));
     m_pCheckBox_9->setText(QString("Output1"));
 
     m_pItem = new QListWidgetItem ();

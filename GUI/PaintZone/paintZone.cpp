@@ -1,24 +1,14 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:50
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 17:26:10
- * @FilePath: \QTCreateByCMake\GUI\PaintZone\paintZone.cpp
- */ 
 #include "paintZone.h"
-#include <QTextEdit>
+#include "ui_paintZone.h"
+
 CPaintZone::CPaintZone(QWidget *parent) :
-    QMainWindow(parent)
+    QDockWidget(parent),
+    ui(new Ui::CPaintZone)
 {
-    
-    QTextEdit *ptr_textArea = new QTextEdit(this);
-    ptr_textArea->setText("Widget");
-    setCentralWidget(ptr_textArea);
+    ui->setupUi(this);
 }
 
 CPaintZone::~CPaintZone()
 {
-    
+    delete ui;
 }

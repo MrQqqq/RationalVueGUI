@@ -1,21 +1,20 @@
-#ifndef CMACHINESTATUSZONE_H
-#define CMACHINESTATUSZONE_H
+#ifndef MACHINESTATUSZONE_H
+#define MACHINESTATUSZONE_H
+#include "machineStatus.h"
+#include <QDockWidget>
 
-#include <QMainWindow>
-#include <numberShowWidget.h>
-#include <MachineStatusCoordinate.h>
 namespace Ui {
 class CMachineStatusZone;
 }
 
-class CMachineStatusZone : public QMainWindow
+class CMachineStatusZone : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     explicit CMachineStatusZone(QWidget *parent = 0);
     ~CMachineStatusZone();
-    CNumberShowWidget * m_pMSWidget;
-    CMachineStatusCoordinate * m_pMSCoordinateWidget;
+    CMachineStatus * m_pMachineStatus;
 private:
     Ui::CMachineStatusZone *ui;
 };

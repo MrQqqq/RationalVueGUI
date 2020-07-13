@@ -1,14 +1,15 @@
 #ifndef OPERATIONZONERIGHT_H
 #define OPERATIONZONERIGHT_H
 
-#include <QMainWindow>
+#include <QDockWidget>
 
 namespace Ui {
 class COperationZoneRight;
 }
 
-class COperationZoneRight : public QMainWindow
+class COperationZoneRight : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     explicit COperationZoneRight(QWidget *parent = 0);
@@ -18,4 +19,4 @@ private:
     Ui::COperationZoneRight *ui;
 };
 
-#endif // MAINWINDOW_H
+#endif // OPERATIONZONERIGHT_H

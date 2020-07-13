@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/:">
+    <qresource prefix="/">
         <file>res/arrow.png</file>
         <file>res/lock.png</file>
         <file>res/triangle.png</file>

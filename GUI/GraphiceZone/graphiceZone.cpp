@@ -1,24 +1,14 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:50
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 17:24:56
- * @FilePath: \QTCreateByCMake\GUI\GraphiceZone\graphiceZone.cpp
- */ 
 #include "graphiceZone.h"
-#include <QTextEdit>
+#include "ui_graphiceZone.h"
+
 CGraphiceZone::CGraphiceZone(QWidget *parent) :
-    QMainWindow(parent)
+    QDockWidget(parent),
+    ui(new Ui::CGraphiceZone)
 {
-    
-    QTextEdit *textArea = new QTextEdit(this);
-    textArea->setText("Widget");
-    setCentralWidget(textArea);
+    ui->setupUi(this);
 }
 
 CGraphiceZone::~CGraphiceZone()
 {
-    
+    delete ui;
 }

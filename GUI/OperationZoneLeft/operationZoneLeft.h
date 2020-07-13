@@ -1,23 +1,22 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:26
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 17:29:39
- * @FilePath: \QTCreateByCMake\GUI\OperationZoneLeft\operationZoneLeft.h
- */ 
-#ifndef COperationZoneLeft_H
-#define COperationZoneLeft_H
+#ifndef OPERATIONZONELEFT_H
+#define OPERATIONZONELEFT_H
 
-#include <QMainWindow>
-class COperationZoneLeft : public QMainWindow
+#include <QDockWidget>
+
+namespace Ui {
+class COperationZoneLeft;
+}
+
+class COperationZoneLeft : public QDockWidget
 {
     Q_OBJECT
 
 public:
     explicit COperationZoneLeft(QWidget *parent = 0);
     ~COperationZoneLeft();
+
+private:
+    Ui::COperationZoneLeft *ui;
 };
 
-#endif // COperationZoneLeft_H
+#endif // OPERATIONZONELEFT_H

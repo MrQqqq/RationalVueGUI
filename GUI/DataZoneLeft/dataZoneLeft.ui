@@ -6,32 +6,47 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>224</width>
-    <height>329</height>
+    <width>214</width>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>CDataZoneLeft</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
+  <widget class="QDockWidget" name="dockWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>31</width>
-     <height>331</height>
+     <width>221</width>
+     <height>351</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QWidget" name="widget_2" native="true">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>0</y>
-     <width>191</width>
-     <height>331</height>
-    </rect>
+   <property name="floating">
+    <bool>false</bool>
    </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>31</width>
+       <height>331</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>191</width>
+       <height>331</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources/>
