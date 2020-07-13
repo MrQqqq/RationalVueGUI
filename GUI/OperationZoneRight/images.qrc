@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/Images">
+    <qresource prefix="/OptZoneRightImages">
         <file>GenericIcon.png</file>
         <file>GCV1.png</file>
         <file>PT_COG1.png</file>
@@ -7,7 +7,7 @@
         <file>NomActIcon1.png</file>
         <file>NomActIcon2.png</file>
     </qresource>
-    <qresource prefix="/qss">
+    <qresource prefix="/OptZoneRightQss">
         <file>demo.qss</file>
     </qresource>
 </RCC>

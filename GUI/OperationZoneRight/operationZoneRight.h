@@ -1,32 +1,22 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:26
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 16:31:06
- * @FilePath: \QTCreateByCMake\GUI\OperationZoneRight\operationZoneLeft.h
- */ 
-#ifndef COperationZoneRight_H
-#define COperationZoneRight_H
+#ifndef OPERATIONZONERIGHT_H
+#define OPERATIONZONERIGHT_H
 
-#include <QMainWindow>
-
-#include <QWidget>
 #include <QDockWidget>
-#include <QVBoxLayout>
-class COperationZoneRight : public QMainWindow
+
+namespace Ui {
+class COperationZoneRight;
+}
+
+class COperationZoneRight : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     explicit COperationZoneRight(QWidget *parent = 0);
     ~COperationZoneRight();
 
-private:
-	QDockWidget* m_pDockWidgetOptZoneRight;
-	QWidget* m_pWidgetOptZoneRight;
-	QVBoxLayout* m_pVLayoutOptZoneRight;
-
+//private:
+//    Ui::COperationZoneRight *ui;
 };
 
-#endif // COperationZoneRight_H
+#endif // OPERATIONZONERIGHT_H

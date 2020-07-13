@@ -65,7 +65,7 @@ public:
         m_pHLayoutFeature1 = new QHBoxLayout;
         m_pLabelFeature1 = new QLabel("Feature1");
         m_pLabelIconFeature1 = new QLabel;
-        m_pixmapFeature1.load(":/Images/MiddleFeature.png");
+        m_pixmapFeature1.load(":/OptZoneRightImages/MiddleFeature.png");
         m_pLabelIconFeature1->setFixedSize(20,20);
         m_pLabelIconFeature1->setPixmap(m_pixmapFeature1);
         m_pLabelIconFeature1->setScaledContents(true);
@@ -80,7 +80,7 @@ public:
         m_pHLayoutFeature2 = new QHBoxLayout;
         m_pLabelFeature2 = new QLabel("Feature2");
         m_pLabelIconFeature2 = new QLabel;
-        m_pixmapFeature2.load(":/Images/MiddleFeature.png");
+        m_pixmapFeature2.load(":/OptZoneRightImages/MiddleFeature.png");
         m_pLabelIconFeature2->setFixedSize(20,20);
         m_pLabelIconFeature2->setPixmap(m_pixmapFeature2);
         m_pLabelIconFeature2->setScaledContents(true);
@@ -97,7 +97,7 @@ public:
 
         //Icon
         m_pLabelCaptionIcon = new QLabel("Icon");
-        m_pixmapCaption.load(":/Images/GenericIcon.png");
+        m_pixmapCaption.load(":/OptZoneRightImages/GenericIcon.png");
         m_pLabelCaptionIcon->setFixedSize(30,30);
         m_pLabelCaptionIcon->setPixmap(m_pixmapCaption);
         m_pLabelCaptionIcon->setScaledContents(true);
@@ -131,7 +131,7 @@ public:
         m_pHLayoutResultFeatureLabel->addWidget(m_pLabelResultFeature,0,Qt::AlignTop);    //顶端对齐
 
         m_pListWidgetItemFeature1 = new QListWidgetItem(m_pListWidgetResultFeature);
-        m_pListWidgetItemFeature1->setIcon(QIcon(":/Images/MiddleFeature.png"));
+        m_pListWidgetItemFeature1->setIcon(QIcon(":/OptZoneRightImages/MiddleFeature.png"));
         m_pListWidgetItemFeature1->setText(QString("LN_MID1"));
         m_pScrAreaResultFeature->setWidget(m_pWidgetScrArea);
 

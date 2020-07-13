@@ -85,10 +85,12 @@ public:
         m_pTbWidgetItemDataZone2 = new QTableWidgetItem(*m_pTbWidgetItemDataZone1);
         m_pTbWidgetItemDataZone3 = new QTableWidgetItem(*m_pTbWidgetItemDataZone1);
         m_pTbWidgetItemDataZone1->setCheckState(Qt::Checked);
-        m_pTbWidgetItemDataZone1->setFlags(m_pTbWidgetItemDataZone1->flags() & (~Qt::ItemIsEditable));//文本设置为不可编辑
         m_pTbWidgetItemDataZone2->setCheckState(Qt::Checked);
         m_pTbWidgetItemDataZone3->setCheckState(Qt::Checked);
-        m_pTableWidgetDataZone->setItem(0,0,new QTableWidgetItem(QIcon(":/Images/GCV1.png"),"GCV1",QTableWidgetItem::Type));
+        m_pTbWidgetItemDataZone1->setFlags(m_pTbWidgetItemDataZone1->flags() & (~Qt::ItemIsEditable));//文本设置为不可编辑
+        m_pTbWidgetItemDataZone2->setFlags(m_pTbWidgetItemDataZone2->flags() & (~Qt::ItemIsEditable));//文本设置为不可编辑
+        m_pTbWidgetItemDataZone3->setFlags(m_pTbWidgetItemDataZone3->flags() & (~Qt::ItemIsEditable));//文本设置为不可编辑
+        m_pTableWidgetDataZone->setItem(0,0,new QTableWidgetItem(QIcon(":/OptZoneRightImages/GCV1.png"),"GCV1",QTableWidgetItem::Type));
         m_pTableWidgetDataZone->setItem(0,1,m_pTbWidgetItemDataZone1);
         m_pTableWidgetDataZone->setItem(0,2,m_pTbWidgetItemDataZone2);
         m_pTableWidgetDataZone->setItem(0,3,m_pTbWidgetItemDataZone3);
@@ -100,12 +102,12 @@ public:
 
 
         m_pLabelIcon1 = new QLabel;
-        m_pixmapIcon1.load(":/Images/NomActIcon1.png");
+        m_pixmapIcon1.load(":/OptZoneRightImages/NomActIcon1.png");
         m_pLabelIcon1->setFixedSize(30,30);
         m_pLabelIcon1->setPixmap(m_pixmapIcon1);
         m_pLabelIcon1->setScaledContents(true);
         m_pLabelIcon2 = new QLabel;
-        m_pixmapIcon2.load(":/Images/NomActIcon2.png");
+        m_pixmapIcon2.load(":/OptZoneRightImages/NomActIcon2.png");
         m_pLabelIcon2->setFixedSize(30,30);
         m_pLabelIcon2->setPixmap(m_pixmapIcon2);
         m_pLabelIcon2->setScaledContents(true);

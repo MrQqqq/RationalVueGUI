@@ -54,7 +54,7 @@ public:
         m_pLabelCaption = new QLabel("Center of Gravity");
         m_pCheckBoxNomFeature = new QCheckBox("Nom Feature");
         m_pIconCG = new QLabel;
-        m_PixmapCG.load(":/Images/GenericIcon.png");
+        m_PixmapCG.load(":/OptZoneRightImages/GenericIcon.png");
         m_pIconCG->setFixedSize(30,30);
         m_pIconCG->setPixmap(m_PixmapCG);
         m_pIconCG->setScaledContents(true);
@@ -73,7 +73,7 @@ public:
         m_pListWidgetDataZone->setFrameShape(QListWidget::NoFrame);
         //向数据区添加数据
         m_pListWidgetItemDataZone = new QListWidgetItem(m_pListWidgetDataZone);
-        m_pListWidgetItemDataZone->setIcon(QIcon(":/Images/GCV1.png"));
+        m_pListWidgetItemDataZone->setIcon(QIcon(":/OptZoneRightImages/GCV1.png"));
         m_pListWidgetItemDataZone->setText("GCV1");
 
         m_pVLayoutDataZone = new QVBoxLayout;
@@ -121,7 +121,7 @@ public:
         m_pVLayoutResultFeatureItems->addWidget(m_pListWidgetResultFeature);
 
         m_pListWidgetItemResultFeature = new QListWidgetItem(m_pListWidgetResultFeature);
-        m_pListWidgetItemResultFeature->setIcon(QIcon(":/Images/PT_COG1.png"));
+        m_pListWidgetItemResultFeature->setIcon(QIcon(":/OptZoneRightImages/PT_COG1.png"));
         m_pListWidgetItemResultFeature->setText("PT_COG1");
 
         m_pVLayoutResultFeature->addLayout(m_pHLayoutResultFeatureLabel);

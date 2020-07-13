@@ -1,5 +1,5 @@
-#ifndef OPERATIONZONERIGHT_H
-#define OPERATIONZONERIGHT_H
+#ifndef MYQSS_H
+#define MYQSS_H
 
 #include <QObject>
 #include <QFile>
@@ -15,7 +15,7 @@ public:
 public:
     static void setStyle(const QString &style){
         QFile qss(style);
-		qss.open(QFile::ReadOnly);
+        qss.open(QFile::ReadOnly);
         qApp->setStyleSheet(qss.readAll());
         qss.close();
     }
@@ -25,4 +25,4 @@ signals:
 public slots:
 };
 
-#endif // OPERATIONZONERIGHT_H
+#endif // COPERATIONZONERIGHTQSS_H

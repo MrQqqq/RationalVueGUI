@@ -10,6 +10,8 @@ public:
     explicit CRVFigureSet(QWidget *parent = nullptr);
     ~CRVFigureSet();
 
+    void setupUi();
+
 signals:
 
 public slots:
