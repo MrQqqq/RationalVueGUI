@@ -1,8 +1,7 @@
 #ifndef CDATAZONELEFT_H
 #define CDATAZONELEFT_H
 
-#include <QWidget>
-
+#include <QMainWindow>
 #include<QDockWidget>
 #include<QDockWidget>
 #include<QWidget>
@@ -14,18 +13,24 @@
 #include<QListWidget>
 #include<QListWidgetItem>
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class CDataZoneLeft; }
 QT_END_NAMESPACE
 
-class CDataZoneLeft : public QWidget
+class CDataZoneLeft : public QMainWindow
 {
     Q_OBJECT
 
 public:
     CDataZoneLeft(QWidget *parent = nullptr);
     ~CDataZoneLeft();
+
+    QWidget *m_pWidget;
+    QWidget *m_pWidget_1;
+    QWidget *m_pWidget_2;
+
+
+    QDockWidget *m_pDockWidget;
 
     QVBoxLayout *m_pVBoxLayout;
     QVBoxLayout *m_pVBoxLayout_2;
