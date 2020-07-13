@@ -1,0 +1,1341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F09E8BA-5E4D-3A2B-872A-9BD4FD497CFD}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>RationalVueGUI</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RationalVueGUI.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RationalVueGUI</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RationalVueGUI.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RationalVueGUI</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RationalVueGUI.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RationalVueGUI</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RationalVueGUI.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RationalVueGUI</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Debug;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Debug;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Debug;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target RationalVueGUI</Message>
+      <Command>setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autogen E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Sqld.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5MultimediaWidgetsd.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5UiToolsd.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Designerd.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Multimediad.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Networkd.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgetsd.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Guid.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Xmld.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Project/forUpdate/RationalVueGUI/build/Debug/RationalVueGUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Project/forUpdate/RationalVueGUI/build/Debug/RationalVueGUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Release;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Release;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_Release;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target RationalVueGUI</Message>
+      <Command>setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autogen E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Sql.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5MultimediaWidgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5UiTools.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Designer.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Multimedia.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Network.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Xml.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Project/forUpdate/RationalVueGUI/build/Release/RationalVueGUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Project/forUpdate/RationalVueGUI/build/Release/RationalVueGUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_MinSizeRel;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_MinSizeRel;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_MinSizeRel;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target RationalVueGUI</Message>
+      <Command>setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autogen E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Sql.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5MultimediaWidgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5UiTools.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Designer.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Multimedia.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Network.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Xml.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Project/forUpdate/RationalVueGUI/build/MinSizeRel/RationalVueGUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Project/forUpdate/RationalVueGUI/build/MinSizeRel/RationalVueGUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_RelWithDebInfo;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_UITOOLS_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_RelWithDebInfo;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\forUpdate\RationalVueGUI\build;E:\Project\forUpdate\RationalVueGUI;E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\include_RelWithDebInfo;E:\Project\forUpdate\RationalVueGUI\GUI\LightControl;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone;E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtCore;E:\Qt\Qt5.9.0\5.9\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtGui;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtSql;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimedia;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtNetwork;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtMultimediaWidgets;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiTools;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtDesigner;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtUiPlugin;E:\Qt\Qt5.9.0\5.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target RationalVueGUI</Message>
+      <Command>setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autogen E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Sql.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5MultimediaWidgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5UiTools.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Designer.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Multimedia.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Network.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Xml.lib;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Project/forUpdate/RationalVueGUI/build/RelWithDebInfo/RationalVueGUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Project/forUpdate/RationalVueGUI/build/RelWithDebInfo/RationalVueGUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\b1bf2b1f93d0142ad1fdb8dda75b59f2\qrc_dataZoneIcon.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\goto.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_green.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\arc_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\macro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdm.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdst.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tcro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tagr.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tpfl.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\1.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\2.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\3.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tvir.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\4.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\5.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\6.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tp2d.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\7.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\output.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\8.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\9.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_blue.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\goto.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_green.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\arc_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\macro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdm.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdst.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tcro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tagr.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tpfl.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\1.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\2.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\3.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tvir.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\4.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\5.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\6.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tp2d.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\7.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\output.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\8.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\9.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_blue.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\goto.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_green.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\arc_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\macro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdm.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdst.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tcro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tagr.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tpfl.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\1.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\2.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\3.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tvir.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\4.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\5.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\6.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tp2d.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\7.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\output.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\8.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\9.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_blue.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_dataZoneIcon_PHDFY3I5YZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\goto.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_green.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\ln_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\arc_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\macro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdm.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tdst.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tcro.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_red.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tagr.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tpfl.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\1.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\2.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\3.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tvir.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\4.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\5.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\6.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\tp2d.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\7.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\output.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\8.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\9.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\icon\cir_blue.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\6c26b69310ac520736f48723dd46cb25\qrc_res.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/DataZoneRight/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_PAGVQBTANO_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\sensor.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\formerrorreports.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\pointclouds.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\add.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\mcs.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\cadmodels.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\del.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\focusplane.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\reposition.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\styleSheet.css;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\main.qss;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\qss.qss;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/DataZoneRight/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_PAGVQBTANO_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\sensor.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\formerrorreports.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\pointclouds.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\add.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\mcs.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\cadmodels.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\del.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\focusplane.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\reposition.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\styleSheet.css;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\main.qss;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\qss.qss;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/DataZoneRight/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_PAGVQBTANO_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\sensor.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\formerrorreports.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\pointclouds.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\add.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\mcs.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\cadmodels.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\del.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\focusplane.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\reposition.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\styleSheet.css;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\main.qss;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\qss.qss;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/DataZoneRight/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_PAGVQBTANO_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_PAGVQBTANO_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\sensor.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\formerrorreports.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\pointclouds.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\add.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\mcs.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\cadmodels.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\del.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\focusplane.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\images\reposition.png;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\styleSheet.css;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\main.qss;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\css\qss.qss;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\b16315e7f1e214cdf7c9919a659dc59f\qrc_res.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/MachineStatusZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_IAC7SNCG6T_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\arrow.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\lock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\triangle.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\unlock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button1.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button2.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button3.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\peo.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\X.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\XX.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Y.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\YY.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Z.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\ZZ.jpg;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/MachineStatusZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_IAC7SNCG6T_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\arrow.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\lock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\triangle.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\unlock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button1.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button2.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button3.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\peo.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\X.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\XX.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Y.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\YY.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Z.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\ZZ.jpg;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/MachineStatusZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_IAC7SNCG6T_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\arrow.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\lock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\triangle.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\unlock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button1.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button2.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button3.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\peo.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\X.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\XX.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Y.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\YY.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Z.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\ZZ.jpg;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/MachineStatusZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_IAC7SNCG6T_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_IAC7SNCG6T_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\arrow.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\lock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\triangle.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\unlock.png;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button1.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button2.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\button3.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\peo.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\X.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\XX.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Y.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\YY.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\Z.jpg;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res\ZZ.jpg;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\f1b4f8b9a3c5f7be03dfe982e1966798\qrc_saribbonresouce.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/MainWindow/saribbonresouce.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\chartDataManager.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\save.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\filter.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\Graph-add.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\openProject.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\information.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\inRangDataRemove.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\layerBarChart.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\folder.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\figureIcon.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/MainWindow/saribbonresouce.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\chartDataManager.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\save.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\filter.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\Graph-add.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\openProject.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\information.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\inRangDataRemove.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\layerBarChart.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\folder.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\figureIcon.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/MainWindow/saribbonresouce.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\chartDataManager.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\save.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\filter.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\Graph-add.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\openProject.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\information.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\inRangDataRemove.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\layerBarChart.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\folder.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\figureIcon.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/MainWindow/saribbonresouce.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_saribbonresouce_KZ45C27WXQ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\chartDataManager.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\save.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\filter.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\Graph-add.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\openProject.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\information.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\inRangDataRemove.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\layerBarChart.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\folder.png;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\icon\figureIcon.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\e628f55a101133220ec019b7bed761fa\qrc_resource.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/MenuBarZone/resource.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_resource_7SPKKDTKM4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\default.qss;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowUp.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowMore.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ribbonPannelOptionButton.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowDown.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/MenuBarZone/resource.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_resource_7SPKKDTKM4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\default.qss;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowUp.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowMore.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ribbonPannelOptionButton.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowDown.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/MenuBarZone/resource.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_resource_7SPKKDTKM4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\default.qss;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowUp.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowMore.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ribbonPannelOptionButton.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowDown.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/MenuBarZone/resource.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_resource_7SPKKDTKM4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_resource_7SPKKDTKM4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\default.qss;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowUp.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowMore.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ribbonPannelOptionButton.png;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource\ArrowDown.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\7fb195db0894094aaa62b0b55ba52a79\qrc_images.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/OperationZoneRight/images.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_images_WK7N4EWVRZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/OperationZoneRight/images.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_images_WK7N4EWVRZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/OperationZoneRight/images.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_images_WK7N4EWVRZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/OperationZoneRight/images.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_images_WK7N4EWVRZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3a4a8be13f11972ee95395a403fc412b\qrc_icons.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/PaintZone/icons.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_icons_2W6WD5GFK4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_4.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_off.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_on.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_3.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_2.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/PaintZone/icons.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_icons_2W6WD5GFK4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_4.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_off.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_on.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_3.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_2.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/PaintZone/icons.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_icons_2W6WD5GFK4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_4.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_off.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_on.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_3.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_2.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/PaintZone/icons.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_icons_2W6WD5GFK4_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_icons_2W6WD5GFK4_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_4.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_off.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_on.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_3.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_2.png;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons\light_mod_1.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\ee4ba64bbfd1e0f04c7db229702aa9c4\qrc_res.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for GUI/StatusBarZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_LKFSIJ5WYZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for GUI/StatusBarZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_LKFSIJ5WYZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for GUI/StatusBarZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_LKFSIJ5WYZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for GUI/StatusBarZone/res.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\Project\forUpdate\RationalVueGUI\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+E:\Cmake\bin\cmake.exe -E cmake_autorcc E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_res_LKFSIJ5WYZ_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\RationalVueGUI_autogen.dir\AutoRcc_res_LKFSIJ5WYZ_Info.json;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png;E:\Qt\Qt5.9.0\5.9\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Project/forUpdate/RationalVueGUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\Cmake\bin\cmake.exe -SE:/Project/forUpdate/RationalVueGUI -BE:/Project/forUpdate/RationalVueGUI/build --check-stamp-file E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCXXCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeRCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeSystem.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_AudioCaptureServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_DSServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QM3uPlaylistPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWasapiPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWindowsAudioPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_WMFServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Project/forUpdate/RationalVueGUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\Cmake\bin\cmake.exe -SE:/Project/forUpdate/RationalVueGUI -BE:/Project/forUpdate/RationalVueGUI/build --check-stamp-file E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCXXCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeRCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeSystem.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_AudioCaptureServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_DSServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QM3uPlaylistPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWasapiPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWindowsAudioPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_WMFServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Project/forUpdate/RationalVueGUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\Cmake\bin\cmake.exe -SE:/Project/forUpdate/RationalVueGUI -BE:/Project/forUpdate/RationalVueGUI/build --check-stamp-file E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCXXCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeRCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeSystem.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_AudioCaptureServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_DSServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QM3uPlaylistPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWasapiPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWindowsAudioPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_WMFServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Project/forUpdate/RationalVueGUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\Cmake\bin\cmake.exe -SE:/Project/forUpdate/RationalVueGUI -BE:/Project/forUpdate/RationalVueGUI/build --check-stamp-file E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;E:\Cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;E:\Cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;E:\Cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;E:\Cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\Cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc;E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeCXXCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeRCCompiler.cmake;E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3.18.0-rc4\CMakeSystem.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5MultimediaConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_AudioCaptureServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_DSServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QM3uPlaylistPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWasapiPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_QWindowsAudioPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Multimedia\Qt5Multimedia_WMFServicePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5MultimediaWidgets\Qt5MultimediaWidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5UiTools\Qt5UiToolsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;E:\Qt\Qt5.9.0\5.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\main.cpp" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.ui">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\datazoneright.ui">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone\graphiceZone.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone\graphiceZone.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.ui">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.ui">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.ui">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h.autosave">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.ui">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro.user">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.ui">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\mainwindow.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\mainwindow.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.h" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGlobal.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.h" />
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png">
+    </Image>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRight.ui">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRightQss.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRightQss.h" />
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png">
+    </Image>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\build.md">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructcenterofgravity.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructcenterofgravity.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructmiddlefeature.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructmiddlefeature.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructnomactbestfitwidget.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructnomactbestfitwidget.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\operationZoneRight.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\operationZoneRight.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\readme.md">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\rvfigureset.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\rvfigureset.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\controlStyle.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\controlStyle.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\lightCircle.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\lightCircle.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.h" />
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.pro">
+    </None>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.ui">
+    </None>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png">
+    </Image>
+    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png">
+    </Image>
+    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc">
+    </None>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\statusBarZone.cpp" />
+    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\statusBarZone.h" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp">
+      <ObjectFileName>$(IntDir)/RationalVueGUI_autogen/PAGVQBTANO/qrc_res.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp">
+      <ObjectFileName>$(IntDir)/RationalVueGUI_autogen/IAC7SNCG6T/qrc_res.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp" />
+    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp">
+      <ObjectFileName>$(IntDir)/RationalVueGUI_autogen/LKFSIJ5WYZ/qrc_res.cpp.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Project\forUpdate\RationalVueGUI\build\ZERO_CHECK.vcxproj">
+      <Project>{6A3F9206-1E95-3755-B0DE-7F0D68F105BE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

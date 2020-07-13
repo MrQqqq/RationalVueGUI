@@ -1,5 +1,5 @@
 #include "OperationZoneRight.h"
-#include "ui_test.h"
+#include "Ui_OperationZoneRight.h"
 
 #include <QVBoxLayout>
 #include "rvfigureset.h"

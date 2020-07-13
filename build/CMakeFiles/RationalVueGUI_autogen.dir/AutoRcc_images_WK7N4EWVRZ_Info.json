@@ -1,0 +1,36 @@
+{
+	"BUILD_DIR" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen",
+	"CMAKE_BINARY_DIR" : "E:/Project/forUpdate/RationalVueGUI/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/Project/forUpdate/RationalVueGUI/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/Project/forUpdate/RationalVueGUI",
+	"CMAKE_SOURCE_DIR" : "E:/Project/forUpdate/RationalVueGUI",
+	"INCLUDE_DIR" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include",
+	"INCLUDE_DIR_Debug" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_Release",
+	"INPUTS" : 
+	[
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/demo.qss",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/PT_COG1.png",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/NomActIcon2.png",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/NomActIcon1.png",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/MiddleFeature.png",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/GenericIcon.png",
+		"E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/GCV1.png"
+	],
+	"LOCK_FILE" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Lock.lock",
+	"MULTI_CONFIG" : true,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "WK7N4EWVRZ",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "E:/Qt/Qt5.9.0/5.9/msvc2017_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Used.txt",
+	"SETTINGS_FILE_Debug" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Used_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Used_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Used_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "E:/Project/forUpdate/RationalVueGUI/build/CMakeFiles/RationalVueGUI_autogen.dir/AutoRcc_images_WK7N4EWVRZ_Used_Release.txt",
+	"SOURCE" : "E:/Project/forUpdate/RationalVueGUI/GUI/OperationZoneRight/images.qrc",
+	"VERBOSITY" : 0
+}

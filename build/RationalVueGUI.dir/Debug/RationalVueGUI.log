@@ -1,0 +1,22 @@
+﻿  Automatic MOC and UIC for target RationalVueGUI
+  Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc
+  Automatic RCC for GUI/DataZoneRight/res.qrc
+  Automatic RCC for GUI/MachineStatusZone/res.qrc
+  
+  AutoRcc subprocess error
+  ------------------------
+  The rcc process failed to compile
+    "SRC:/GUI/MachineStatusZone/res.qrc"
+  into
+    "SRC:/build/RationalVueGUI_autogen/include_Debug/IAC7SNCG6T/qrc_res_CMAKE_.cpp"
+  
+  Command
+  -------
+  E:/Qt/Qt5.9.0/5.9/msvc2017_64/bin/rcc.exe -name res_IAC7SNCG6T -o E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_Debug/IAC7SNCG6T/qrc_res_CMAKE_.cpp E:/Project/forUpdate/RationalVueGUI/GUI/MachineStatusZone/res.qrc
+  
+  Output
+  ------
+  RCC: Error in 'E:/Project/forUpdate/RationalVueGUI/GUI/MachineStatusZone/res.qrc': Cannot find file 'res/arrow.png'
+  
+  
+E:\Visual Studio\2017\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(209,5): error MSB6006: “cmd.exe”已退出，代码为 1。
