@@ -10,7 +10,6 @@ class CMachineStatusZone;
 
 class CMachineStatusZone : public QMainWindow
 {
-    Q_OBJECT
 
 public:
     explicit CMachineStatusZone(QWidget *parent = 0);

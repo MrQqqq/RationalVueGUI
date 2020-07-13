@@ -9,7 +9,6 @@ class CMachineStatusCoordinate;
 
 class CMachineStatusCoordinate : public QWidget
 {
-    Q_OBJECT
 
 public:
     explicit CMachineStatusCoordinate(QWidget *parent = 0);

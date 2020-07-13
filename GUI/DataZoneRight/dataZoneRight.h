@@ -13,7 +13,6 @@ QT_END_NAMESPACE
 
 class CDataZoneRight : public QMainWindow
 {
-    Q_OBJECT
 
 public:
 	CDataZoneRight(QWidget *parent = nullptr);

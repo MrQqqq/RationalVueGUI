@@ -21,7 +21,6 @@ QT_END_NAMESPACE
 
 class CDataZoneLeft : public QWidget
 {
-    Q_OBJECT
 
 public:
     CDataZoneLeft(QWidget *parent = nullptr);
