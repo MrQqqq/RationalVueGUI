@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>CDataZoneLeft</class>
- <widget class="QWidget" name="CDataZoneLeft">
+ <widget class="QDockWidget" name="CDataZoneLeft">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>221</width>
-    <height>329</height>
+    <width>230</width>
+    <height>343</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CDataZoneLeft</string>
+   <string>DockWidget</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>31</width>
-     <height>331</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QWidget" name="widget_2" native="true">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>0</y>
-     <width>191</width>
-     <height>331</height>
-    </rect>
-   </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>31</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>-1</y>
+      <width>201</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

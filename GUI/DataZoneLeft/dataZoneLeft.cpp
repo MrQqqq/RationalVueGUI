@@ -1,17 +1,27 @@
 #include "dataZoneLeft.h"
 #include "ui_dataZoneLeft.h"
 
-CDataZoneLeft::CDataZoneLeft(QWidget *parent)
-    : QDockWidget(parent)
-    , ui(new Ui::CDataZoneLeft)
+CDataZoneLeft::CDataZoneLeft(QWidget *parent) :
+    QDockWidget(parent),
+    ui(new Ui::CDataZoneLeft)
 {
     ui->setupUi(this);
 
+//    m_pDockWidget = new QDockWidget();
+//    m_pDockWidget->setMinimumSize(90,200);
 
+//    m_pWidget = new QWidget();
+//    m_pWidget->resize(90,200);
+
+//    m_pWidget_1 = new QWidget();
+//    m_pWidget_1->resize(25,200);
+
+//    m_pWidget_2 = new QWidget();
+//    m_pWidget_2->resize(75,200);
     m_pVBoxLayout = new QVBoxLayout();
 
-    m_pVBoxLayout->setContentsMargins(1,3,1,1);
-    m_pVBoxLayout->setSpacing(1);
+    m_pVBoxLayout->setContentsMargins(0,0,0,0);
+    m_pVBoxLayout->setSpacing(0);
 
     m_pToolButton = new QToolButton();
     m_pToolButton_2 = new QToolButton();
@@ -24,40 +34,53 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
     m_pToolButton_9 = new QToolButton();
 
     m_pToolButton->setIcon(QIcon(":/icon/1.png"));
-    m_pToolButton->setFixedSize(30, 30);
-    m_pToolButton->setIconSize(QSize(30, 30));
+    m_pToolButton->setFixedSize(25,25);
+    m_pToolButton->setIconSize(QSize(25,25));
 
     m_pToolButton_2->setIcon(QIcon(":/icon/2.png"));
-    m_pToolButton_2->setFixedSize(30, 30);
-    m_pToolButton_2->setIconSize(QSize(30, 30));
+    m_pToolButton_2->setFixedSize(25,25);
+    m_pToolButton_2->setIconSize(QSize(25,25));
 
     m_pToolButton_3->setIcon(QIcon(":/icon/3.png"));
-    m_pToolButton_3->setFixedSize(30, 30);
-    m_pToolButton_3->setIconSize(QSize(30, 30));
+    m_pToolButton_3->setFixedSize(25,25);
+    m_pToolButton_3->setIconSize(QSize(25,25));
 
     m_pToolButton_4->setIcon(QIcon(":/icon/4.png"));
-    m_pToolButton_4->setFixedSize(30, 30);
-    m_pToolButton_4->setIconSize(QSize(30, 30));
+    m_pToolButton_4->setFixedSize(25,25);
+    m_pToolButton_4->setIconSize(QSize(25,25));
 
     m_pToolButton_5->setIcon(QIcon(":/icon/5.png"));
-    m_pToolButton_5->setFixedSize(30, 30);
-    m_pToolButton_5->setIconSize(QSize(30, 30));
+    m_pToolButton_5->setFixedSize(25,25);
+    m_pToolButton_5->setIconSize(QSize(25,25));
 
     m_pToolButton_6->setIcon(QIcon(":/icon/6.png"));
-    m_pToolButton_6->setFixedSize(30, 30);
-    m_pToolButton_6->setIconSize(QSize(30, 30));
+    m_pToolButton_6->setFixedSize(25,25);
+    m_pToolButton_6->setIconSize(QSize(25,25));
 
     m_pToolButton_7->setIcon(QIcon(":/icon/7.png"));
-    m_pToolButton_7->setFixedSize(30, 30);
-    m_pToolButton_7->setIconSize(QSize(30, 30));
+    m_pToolButton_7->setFixedSize(25,25);
+    m_pToolButton_7->setIconSize(QSize(25,25));
 
     m_pToolButton_8->setIcon(QIcon(":/icon/8.png"));
-    m_pToolButton_8->setFixedSize(30, 30);
-    m_pToolButton_8->setIconSize(QSize(30, 30));
+    m_pToolButton_8->setFixedSize(25,25);
+    m_pToolButton_8->setIconSize(QSize(25,25));
+
+    m_pMenu = new QMenu();
+    m_pMenu->addMenu(QString("Prompt"));
+    m_pMenu->addMenu(QString("Output"));
+    m_pMenu->addMenu(QString("Macro"));
+    m_pMenu->addMenu(QString("Goto"));
+    m_pMenu->addMenu(QString("Control Command"));
+    m_pMenu->addMenu(QString("Define Feature"));
+
+    m_pToolButton_8->setMenu(m_pMenu);
+
+    m_pToolButton_8->setPopupMode(QToolButton::InstantPopup);
+
 
     m_pToolButton_9->setIcon(QIcon(":/icon/9.png"));
-    m_pToolButton_9->setFixedSize(30, 30);
-    m_pToolButton_9->setIconSize(QSize(30, 30));
+    m_pToolButton_9->setFixedSize(25,25);
+    m_pToolButton_9->setIconSize(QSize(25,25));
 
     m_pVBoxLayout->addWidget(m_pToolButton);
     m_pVBoxLayout->addWidget(m_pToolButton_2);
@@ -71,8 +94,6 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
 
     m_pVBoxLayout->addStretch();
     ui->widget->setLayout(m_pVBoxLayout);
-
-    ui->widget->setGeometry(1, 0, ui->widget->geometry().width(), ui->widget->geometry().height()-2);
     ui->widget->setStyleSheet("border-style:none;");
 
 
@@ -80,7 +101,7 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
 
     m_pVBoxLayout_2 = new QVBoxLayout();
 
-    m_pVBoxLayout_2->setContentsMargins(18,4,1,1);
+    m_pVBoxLayout_2->setContentsMargins(0,0,0,0);
     m_pVBoxLayout_2->setSpacing(0);
 
     QListWidget *listWidget = new QListWidget(ui->widget_2);
@@ -181,11 +202,20 @@ CDataZoneLeft::CDataZoneLeft(QWidget *parent)
     listWidget -> setItemWidget( m_pItem_9 ,m_pCheckBox_9);
 
 
-    listWidget->setStyleSheet("border-style:none;");
+    listWidget->setStyleSheet("border-style:none;background:transparent;");
 
     m_pVBoxLayout_2->addWidget(listWidget);
     ui->widget_2->setLayout(m_pVBoxLayout_2);
 
+
+
+
+//    m_pHBoxLayout = new QHBoxLayout();
+//    m_pHBoxLayout->addWidget(m_pWidget_1);
+//    m_pHBoxLayout->addWidget(m_pWidget_2);
+
+//    m_pWidget->setLayout(m_pHBoxLayout);
+//    m_pDockWidget->setWidget(m_pWidget);
 
 
 }
@@ -194,4 +224,3 @@ CDataZoneLeft::~CDataZoneLeft()
 {
     delete ui;
 }
-

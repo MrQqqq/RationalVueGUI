@@ -1,10 +1,7 @@
-#ifndef CDATAZONELEFT_H
-#define CDATAZONELEFT_H
+#ifndef DATAZONELEFT_H
+#define DATAZONELEFT_H
 
-#include <QWidget>
-
-#include<QDockWidget>
-#include<QDockWidget>
+#include <QDockWidget>
 #include<QWidget>
 #include<QVBoxLayout>
 #include<QString>
@@ -13,19 +10,26 @@
 #include<QCheckBox>
 #include<QListWidget>
 #include<QListWidgetItem>
+#include<QMenu>
 
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class CDataZoneLeft; }
-QT_END_NAMESPACE
+namespace Ui {
+class CDataZoneLeft;
+}
 
 class CDataZoneLeft : public QDockWidget
 {
     Q_OBJECT
 
 public:
-    CDataZoneLeft(QWidget *parent = nullptr);
+    explicit CDataZoneLeft(QWidget *parent = nullptr);
     ~CDataZoneLeft();
+
+    QWidget *m_pWidget;
+    QWidget *m_pWidget_1;
+    QWidget *m_pWidget_2;
+
+
+    QDockWidget *m_pDockWidget;
 
     QVBoxLayout *m_pVBoxLayout;
     QVBoxLayout *m_pVBoxLayout_2;
@@ -41,6 +45,8 @@ public:
     QToolButton *m_pToolButton_7;
     QToolButton *m_pToolButton_8;
     QToolButton *m_pToolButton_9;
+
+    QMenu *m_pMenu;
 
     QCheckBox *m_pCheckBox;
     QCheckBox *m_pCheckBox_2;
@@ -66,4 +72,5 @@ public:
 private:
     Ui::CDataZoneLeft *ui;
 };
-#endif // CDATAZONELEFT_H
+
+#endif // DATAZONELEFT_H
