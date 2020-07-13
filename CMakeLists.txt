@@ -21,6 +21,9 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt5 5.9 COMPONENTS Core Gui Widgets Sql Multimedia MultimediaWidgets UiTools Designer CONFIG  REQUIRED)
 
+#LightControl文件
+file(GLOB LightControl_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/LightControl/*.*)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/LightControl/)
 
 #MenuBarZone文件
 file(GLOB MenuBarZone_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/MenuBarZone/*.*)
@@ -53,9 +56,11 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/OperationZoneRight/)
 #PaintZone文件
 file(GLOB PaintZone_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/PaintZone/*.*)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/PaintZone/)
+
 #MachineStatusZone文件
 file(GLOB MachineStatusZone_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/MachineStatusZone/*.*)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/MachineStatusZone/)
+
 #StatusBarZone文件
 file(GLOB StatusBarZone_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/StatusBarZone/*.*)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/StatusBarZone/)
@@ -64,9 +69,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/StatusBarZone/)
 file(GLOB MainWindow_FILES ${CMAKE_CURRENT_SOURCE_DIR}/GUI/MainWindow/*.*)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GUI/MainWindow/)
 
-file(GLOB ALL_GUI_FILES ${MenuBarZone_FILES} ${DataZoneLeft_FILES} ${DataZoneRight_FILES} ${DimensionReportZone_FILES}
-		${GraphiceZone_FILES} ${OperationZoneLeft_FILES} ${OperationZoneRight_FILES} ${PaintZone_FILES} ${MachineStatusZone_FILES} 
-		${StatusBarZone_FILES} ${MainWindow_FILES}
+file(GLOB ALL_GUI_FILES ${MenuBarZone_FILES} ${DataZoneLeft_FILES} ${DataZoneRight_FILES} ${DimensionReportZone_FILES} ${GraphiceZone_FILES} ${OperationZoneLeft_FILES} ${OperationZoneRight_FILES} ${PaintZone_FILES} ${LightControl_FILES} ${MachineStatusZone_FILES} ${StatusBarZone_FILES} ${MainWindow_FILES}
 	)
 source_group("GUI" FILES ${ALL_GUI_FILES})
 add_executable(${PROJECT_NAME} main.cpp ${ALL_GUI_FILES})
