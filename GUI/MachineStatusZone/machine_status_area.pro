@@ -25,19 +25,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    machineStatusZone.cpp \
     MachineStatusCoordinate.cpp \
-    machineControl.cpp
+    machineControl.cpp \
+    machineStatus.cpp \
+    machineStatusZone.cpp
 
 HEADERS += \
     MachineStatusCoordinate.h \
-    machineStatusZone.h \
-    machineControl.h
+    machineControl.h \
+    machineStatus.h \
+    machineStatusZone.h
 
 FORMS += \
     MachineStatusCoordinate.ui \
-    machineStatusZone.ui \
-    machineControl.ui
+    machineControl.ui \
+    machineStatus.ui \
+    machineStatusZone.ui
 
 RESOURCES += \
     res.qrc \

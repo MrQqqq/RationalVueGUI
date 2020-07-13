@@ -1,22 +1,22 @@
-#ifndef CMACHINESTATUSZONE_H
-#define CMACHINESTATUSZONE_H
-
-#include <QWidget>
+#ifndef MACHINESTATUSZONE_H
+#define MACHINESTATUSZONE_H
+#include "machineStatus.h"
+#include <QDockWidget>
 
 namespace Ui {
 class CMachineStatusZone;
 }
 
-class CMachineStatusZone : public QWidget
+class CMachineStatusZone : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     explicit CMachineStatusZone(QWidget *parent = 0);
     ~CMachineStatusZone();
-    bool m_bIsLock=true;
-
+    CMachineStatus * m_pMachineStatus;
 private:
     Ui::CMachineStatusZone *ui;
 };
 
-#endif // CMACHINESTATUSZONE_H
+#endif // MACHINESTATUSZONE_H
