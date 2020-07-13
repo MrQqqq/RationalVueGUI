@@ -13,6 +13,7 @@ class CDataZoneRight;
 
 class CDataZoneRight : public QDockWidget
 {
+    Q_OBJECT
 
 public:
     explicit CDataZoneRight(QWidget *parent = nullptr);

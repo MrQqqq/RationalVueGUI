@@ -1,13 +1,13 @@
-#ifndef CPaintZone_H
-#define CPaintZone_H
+#ifndef PAINTZONE_H
+#define PAINTZONE_H
 
-#include <QWidget>
+#include <QDockWidget>
 
 namespace Ui {
 class CPaintZone;
 }
 
-class CPaintZone : public QWidget
+class CPaintZone : public QDockWidget
 {
     Q_OBJECT
 
@@ -17,9 +17,6 @@ public:
 
 private:
     Ui::CPaintZone *ui;
-
-private slots:
-    void initForm();
 };
 
-#endif // LIGHTCONTROL_H
+#endif // PAINTZONE_H

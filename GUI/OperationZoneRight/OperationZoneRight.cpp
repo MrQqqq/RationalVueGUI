@@ -1,22 +1,14 @@
-#include "OperationZoneRight.h"
-//#include "Ui_operationZoneRight.h"
-
-#include <QVBoxLayout>
-#include "rvfigureset.h"
+#include "operationZoneRight.h"
+#include "ui_operationZoneRight.h"
 
 COperationZoneRight::COperationZoneRight(QWidget *parent) :
-    QDockWidget(parent)
-//  ,ui(new Ui::COperationZoneRight)
+    QDockWidget(parent),
+    ui(new Ui::COperationZoneRight)
 {
-//    ui->setupUi(this);
-
-    QVBoxLayout* m_pVLayoutOptZoneRight = new QVBoxLayout;
-    CRVFigureSet* m_pFigureSet = new CRVFigureSet;
-    m_pFigureSet->setLayout(m_pVLayoutOptZoneRight);
-    this->setWidget(m_pFigureSet);
+    ui->setupUi(this);
 }
 
 COperationZoneRight::~COperationZoneRight()
 {
-//    delete ui;
+    delete ui;
 }

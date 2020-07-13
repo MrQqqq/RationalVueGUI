@@ -1,24 +1,15 @@
-/*
- * @Description: 
- * @Author: szq
- * @Github: https://github.com/MrQqqq
- * @Date: 2020-07-11 15:59:50
- * @LastEditors: szq
- * @LastEditTime: 2020-07-11 17:25:47
- * @FilePath: \QTCreateByCMake\GUI\OperationZoneLeft\operationZoneLeft.cpp
- */ 
 #include "operationZoneLeft.h"
-#include <QTextEdit>
+#include "ui_operationZoneLeft.h"
+
 COperationZoneLeft::COperationZoneLeft(QWidget *parent) :
-    QMainWindow(parent)
+    QDockWidget(parent),
+    ui(new Ui::COperationZoneLeft)
 {
-    
-    QTextEdit *ptr_textArea = new QTextEdit(this);
-    ptr_textArea->setText("Widget");
-    setCentralWidget(ptr_textArea);
+    ui->setupUi(this);
+    this->resize(260,253);
 }
 
 COperationZoneLeft::~COperationZoneLeft()
 {
-    
+    delete ui;
 }

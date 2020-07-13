@@ -15,8 +15,8 @@ public:
     explicit COperationZoneRight(QWidget *parent = 0);
     ~COperationZoneRight();
 
-//private:
-//    Ui::COperationZoneRight *ui;
+private:
+    Ui::COperationZoneRight *ui;
 };
 
 #endif // OPERATIONZONERIGHT_H
