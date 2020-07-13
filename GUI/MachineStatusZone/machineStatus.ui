@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CNumberShowWidget</class>
- <widget class="QWidget" name="CNumberShowWidget">
+ <class>CMachineStatus</class>
+ <widget class="QWidget" name="CMachineStatus">
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>290</width>
+    <width>400</width>
     <height>210</height>
    </rect>
   </property>
@@ -26,6 +26,12 @@
    <bool>true</bool>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
    <item>
     <widget class="QWidget" name="widget" native="true">
      <property name="sizePolicy">
@@ -66,7 +72,7 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/lock.png</normaloff>:/:/res/lock.png</iconset>
+          <normaloff>:/res/lock.png</normaloff>:/res/lock.png</iconset>
         </property>
        </widget>
       </item>
@@ -108,7 +114,7 @@
         </property>
         <property name="icon">
          <iconset resource="res.qrc">
-          <normaloff>:/:/res/arrow.png</normaloff>:/:/res/arrow.png</iconset>
+          <normaloff>:/res/arrow.png</normaloff>:/res/arrow.png</iconset>
         </property>
        </widget>
       </item>
@@ -198,7 +204,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>23</pointsize>
+          <pointsize>18</pointsize>
          </font>
         </property>
         <property name="autoFillBackground">
@@ -229,7 +235,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>46</pointsize>
+          <pointsize>36</pointsize>
          </font>
         </property>
         <property name="lineWidth">
@@ -311,7 +317,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>23</pointsize>
+          <pointsize>18</pointsize>
          </font>
         </property>
         <property name="autoFillBackground">
@@ -342,7 +348,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>46</pointsize>
+          <pointsize>36</pointsize>
          </font>
         </property>
         <property name="lineWidth">
@@ -424,7 +430,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>23</pointsize>
+          <pointsize>18</pointsize>
          </font>
         </property>
         <property name="autoFillBackground">
@@ -455,7 +461,7 @@
         <property name="font">
          <font>
           <family>黑体</family>
-          <pointsize>46</pointsize>
+          <pointsize>36</pointsize>
          </font>
         </property>
         <property name="lineWidth">

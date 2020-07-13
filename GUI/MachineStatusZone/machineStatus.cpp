@@ -1,12 +1,12 @@
-#include "numberShowWidget.h"
-#include "ui_numberShowWidget.h"
+#include "machineStatus.h"
+#include "ui_machineStatus.h"
 #include <QDebug>
 #include <QToolButton>
 #include <QMenu>
 #include <QPoint>
-CNumberShowWidget::CNumberShowWidget(QWidget *parent) :
+CMachineStatus::CMachineStatus(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::CNumberShowWidget)
+    ui(new Ui::CMachineStatus)
 {
     ui->setupUi(this);
     ui->lineEdit->setStyleSheet("background-color:#A8ACB7;border: 1px solid gray;border-radius: 3px;padding: 1px 2px 1px 2px;");
@@ -25,13 +25,16 @@ CNumberShowWidget::CNumberShowWidget(QWidget *parent) :
     }
     ui->toolButton_1->setStyleSheet("border:0px");
     ui->toolButton_2->setStyleSheet("border:0px");
-    ui->comboBox->setStyleSheet("QComboBox{border: 1px solid gray;border-radius: 3px;padding: 1px 2px 1px 2px;}QComboBox::editable{background-color:#8B8494}QComboBox::!editable{background-color:#C5C8DB}QComboBox::drop-down{width:25px;}QComboBox::down-arrow{image:url(:/:/res/triangle.png);}");
+    QPalette palette;
+    palette.setColor (QPalette::Background, QColor("#93939F"));
+    setPalette(palette);
+    ui->comboBox->setStyleSheet("QComboBox{border: 1px solid gray;border-radius: 3px;padding: 1px 2px 1px 2px;}QComboBox::editable{background-color:#8B8494}QComboBox::!editable{background-color:#C5C8DB}QComboBox::drop-down{width:25px;}QComboBox::down-arrow{image:url(:/res/triangle.png);}");
     // 对锁按钮点击添加图片切换
     connect(ui->toolButton_1,&QToolButton::clicked,[=](){
         if(m_bIsLock==true)
-            ui->toolButton_1->setIcon(QIcon(":/:/res/unlock.png"));
+            ui->toolButton_1->setIcon(QIcon(":/res/unlock.png"));
         else
-            ui->toolButton_1->setIcon(QIcon(":/:/res/lock.png"));
+            ui->toolButton_1->setIcon(QIcon(":/res/lock.png"));
         m_bIsLock = !m_bIsLock;
     });
 
@@ -68,7 +71,7 @@ CNumberShowWidget::CNumberShowWidget(QWidget *parent) :
     });
 }
 
-CNumberShowWidget::~CNumberShowWidget()
+CMachineStatus::~CMachineStatus()
 {
     delete ui;
 }

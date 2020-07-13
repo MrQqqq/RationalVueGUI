@@ -2,7 +2,7 @@
 #define MACHINECONTROL_H
 
 #include <QWidget>
-
+#include <QPoint>
 namespace Ui {
 class CMachineControl;
 }
@@ -14,6 +14,10 @@ class CMachineControl : public QWidget
 public:
     explicit CMachineControl(QWidget *parent = 0);
     ~CMachineControl();
+    double m_fMaxXYNumber;
+    QPoint m_CentorPoint;
+    int m_IRadius;
+    int m_ISpace;
 protected:
     void paintEvent(QPaintEvent *);
 private:
