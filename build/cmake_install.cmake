@@ -1,8 +1,8 @@
-# Install script for directory: E:/Project/forUpdate/RationalVueGUI
+# Install script for directory: D:/test__1/RationalVueGUI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/RationalVueGUI")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/RationalVueGUI")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Project/forUpdate/RationalVueGUI/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/test__1/RationalVueGUI/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

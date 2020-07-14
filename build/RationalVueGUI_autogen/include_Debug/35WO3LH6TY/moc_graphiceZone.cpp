@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "GUI/GraphiceZone/graphiceZone.h"
+#include "../../../../GUI/GraphiceZone/graphiceZone.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -63,7 +63,7 @@ void CGraphiceZone::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 const QMetaObject CGraphiceZone::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_CGraphiceZone.data,
+    { &QDockWidget::staticMetaObject, qt_meta_stringdata_CGraphiceZone.data,
       qt_meta_data_CGraphiceZone,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -78,12 +78,12 @@ void *CGraphiceZone::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CGraphiceZone.stringdata0))
         return static_cast<void*>(const_cast< CGraphiceZone*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    return QDockWidget::qt_metacast(_clname);
 }
 
 int CGraphiceZone::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDockWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

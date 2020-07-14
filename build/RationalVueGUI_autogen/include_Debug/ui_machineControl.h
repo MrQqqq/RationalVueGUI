@@ -26,7 +26,7 @@ public:
     {
         if (CMachineControl->objectName().isEmpty())
             CMachineControl->setObjectName(QStringLiteral("CMachineControl"));
-        CMachineControl->resize(400, 300);
+        CMachineControl->resize(600, 400);
 
         retranslateUi(CMachineControl);
 

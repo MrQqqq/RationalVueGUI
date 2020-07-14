@@ -1,22 +1,107 @@
 ﻿  Automatic MOC and UIC for target RationalVueGUI
   Automatic RCC for GUI/DataZoneLeft/dataZoneIcon.qrc
+  Automatic RCC for GUI/DataZoneLeft/dataZoneLeftIcon.qrc
   Automatic RCC for GUI/DataZoneRight/res.qrc
+  Automatic RCC for GUI/LightControl/icons.qrc
   Automatic RCC for GUI/MachineStatusZone/res.qrc
-  
-  AutoRcc subprocess error
-  ------------------------
-  The rcc process failed to compile
-    "SRC:/GUI/MachineStatusZone/res.qrc"
-  into
-    "SRC:/build/RationalVueGUI_autogen/include_Debug/IAC7SNCG6T/qrc_res_CMAKE_.cpp"
-  
-  Command
-  -------
-  E:/Qt/Qt5.9.0/5.9/msvc2017_64/bin/rcc.exe -name res_IAC7SNCG6T -o E:/Project/forUpdate/RationalVueGUI/build/RationalVueGUI_autogen/include_Debug/IAC7SNCG6T/qrc_res_CMAKE_.cpp E:/Project/forUpdate/RationalVueGUI/GUI/MachineStatusZone/res.qrc
-  
-  Output
-  ------
-  RCC: Error in 'E:/Project/forUpdate/RationalVueGUI/GUI/MachineStatusZone/res.qrc': Cannot find file 'res/arrow.png'
-  
-  
-E:\Visual Studio\2017\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(209,5): error MSB6006: “cmd.exe”已退出，代码为 1。
+  Automatic RCC for GUI/MainWindow/saribbonresouce.qrc
+  Automatic RCC for GUI/MenuBarZone/resource.qrc
+  Automatic RCC for GUI/OperationZoneLeft/it_icons.qrc
+  Automatic RCC for GUI/OperationZoneRight/optzonerightresources.qrc
+  Automatic RCC for GUI/PaintZone/ima_icons.qrc
+  Automatic RCC for GUI/StatusBarZone/res.qrc
+  Building Custom Rule D:/test__1/RationalVueGUI/CMakeLists.txt
+  CMake does not need to re-run because D:/test__1/RationalVueGUI/build/CMakeFiles/generate.stamp is up-to-date.
+  mocs_compilation.cpp
+d:\test__1\rationalvuegui\build\rationalvuegui_autogen\include_debug\gdncxolv4c\../../../../GUI/LightControl/controlStyle.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  main.cpp
+  dataZoneLeft.cpp
+  dataZoneRight.cpp
+  dimensionReportZone.cpp
+  graphiceZone.cpp
+  controlStyle.cpp
+D:\test__1\RationalVueGUI\GUI\LightControl\controlStyle.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\test__1\rationalvuegui\gui\lightcontrol\controlStyle.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  lightCircle.cpp
+D:\test__1\RationalVueGUI\GUI\LightControl\lightCircle.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  lightControl.cpp
+d:\test__1\rationalvuegui\gui\lightcontrol\controlStyle.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  MachineStatusCoordinate.cpp
+  machineControl.cpp
+D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineControl.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  machineStatus.cpp
+D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatus.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  machineStatusZone.cpp
+  numberShowWidget.cpp
+D:\test__1\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mainwindow.cpp
+  FramelessHelper.cpp
+  SARibbonApplicationButton.cpp
+  SARibbonBar.cpp
+  SARibbonButtonGroupWidget.cpp
+  SARibbonCategory.cpp
+  正在生成代码...
+  正在编译...
+  SARibbonCategoryLayout.cpp
+  SARibbonCheckBox.cpp
+  SARibbonComboBox.cpp
+  SARibbonContextCategory.cpp
+  SARibbonControlButton.cpp
+  SARibbonCtrlContainer.cpp
+  SARibbonDrawHelper.cpp
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(4): warning C4273: “SARibbonDrawHelper::SARibbonDrawHelper”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(14): note: 参见“{ctor}”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(9): warning C4273: “SARibbonDrawHelper::iconToPixmap”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(15): note: 参见“iconToPixmap”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(28): warning C4273: “SARibbonDrawHelper::drawIcon”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(16): note: 参见“drawIcon”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(48): warning C4273: “SARibbonDrawHelper::drawIcon”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(18): note: 参见“drawIcon”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(68): warning C4273: “SARibbonDrawHelper::iconActualSize”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(20): note: 参见“iconActualSize”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(86): warning C4273: “SARibbonDrawHelper::drawText”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(22): note: 参见“drawText”的前一个定义
+D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp(96): warning C4273: “SARibbonDrawHelper::drawText”: dll 链接不一致
+  d:\test__1\rationalvuegui\gui\menubarzone\SARibbonDrawHelper.h(24): note: 参见“drawText”的前一个定义
+  SARibbonElementCreateDelegate.cpp
+  SARibbonElementManager.cpp
+  SARibbonGallery.cpp
+  SARibbonGalleryGroup.cpp
+  SARibbonGalleryItem.cpp
+  SARibbonLineEdit.cpp
+  SARibbonMainWindow.cpp
+  SARibbonMenu.cpp
+  SARibbonPannel.cpp
+  SARibbonPannelOptionButton.cpp
+  SARibbonQuickAccessBar.cpp
+  SARibbonSeparatorWidget.cpp
+  SARibbonStackedWidget.cpp
+  正在生成代码...
+  正在编译...
+  SARibbonTabBar.cpp
+  SARibbonToolButton.cpp
+  SAWindowButtonGroup.cpp
+  operationZoneLeft.cpp
+  operationzoneright.cpp
+  operationzonerightqss.cpp
+  paintZone.cpp
+  statusBarZone.cpp
+  qrc_dataZoneIcon.cpp
+  qrc_dataZoneLeftIcon.cpp
+  qrc_icons.cpp
+  qrc_saribbonresouce.cpp
+  qrc_resource.cpp
+  qrc_it_icons.cpp
+  qrc_optzonerightresources.cpp
+  qrc_ima_icons.cpp
+  正在生成代码...
+  qrc_res.cpp
+  qrc_res.cpp
+  qrc_res.cpp
+    正在创建库 D:/test__1/RationalVueGUI/build/Debug/RationalVueGUI.lib 和对象 D:/test__1/RationalVueGUI/build/Debug/RationalVueGUI.exp
+SARibbonCtrlContainer.obj : warning LNK4217: 本地定义的符号 ?drawIcon@SARibbonDrawHelper@@SAXAEBVQIcon@@PEAVQPainter@@PEBVQStyleOption@@HHHH@Z (public: static void __cdecl SARibbonDrawHelper::drawIcon(class QIcon const &,class QPainter *,class QStyleOption const *,int,int,int,int)) 在函数 "protected: virtual void __cdecl SARibbonCtrlContainer::paintEvent(class QPaintEvent *)" (?paintEvent@SARibbonCtrlContainer@@MEAAXPEAVQPaintEvent@@@Z) 中导入
+SARibbonCtrlContainer.obj : warning LNK4217: 本地定义的符号 ?iconActualSize@SARibbonDrawHelper@@SA?AVQSize@@AEBVQIcon@@PEBVQStyleOption@@AEBV2@@Z (public: static class QSize __cdecl SARibbonDrawHelper::iconActualSize(class QIcon const &,class QStyleOption const *,class QSize const &)) 在函数 "protected: virtual void __cdecl SARibbonCtrlContainer::paintEvent(class QPaintEvent *)" (?paintEvent@SARibbonCtrlContainer@@MEAAXPEAVQPaintEvent@@@Z) 中导入
+SARibbonToolButton.obj : warning LNK4049: 已导入本地定义的符号 ?iconActualSize@SARibbonDrawHelper@@SA?AVQSize@@AEBVQIcon@@PEBVQStyleOption@@AEBV2@@Z (public: static class QSize __cdecl SARibbonDrawHelper::iconActualSize(class QIcon const &,class QStyleOption const *,class QSize const &))
+SARibbonCtrlContainer.obj : warning LNK4217: 本地定义的符号 ?drawText@SARibbonDrawHelper@@SAXAEBVQString@@PEAVQStylePainter@@PEBVQStyleOption@@V?$QFlags@W4AlignmentFlag@Qt@@@@AEBVQRect@@@Z (public: static void __cdecl SARibbonDrawHelper::drawText(class QString const &,class QStylePainter *,class QStyleOption const *,class QFlags<enum Qt::AlignmentFlag>,class QRect const &)) 在函数 "protected: virtual void __cdecl SARibbonCtrlContainer::paintEvent(class QPaintEvent *)" (?paintEvent@SARibbonCtrlContainer@@MEAAXPEAVQPaintEvent@@@Z) 中导入
+SARibbonToolButton.obj : warning LNK4217: 本地定义的符号 ?iconToPixmap@SARibbonDrawHelper@@SA?AVQPixmap@@AEBVQIcon@@PEAVQWidget@@PEBVQStyleOption@@AEBVQSize@@@Z (public: static class QPixmap __cdecl SARibbonDrawHelper::iconToPixmap(class QIcon const &,class QWidget *,class QStyleOption const *,class QSize const &)) 在函数 "protected: virtual void __cdecl SARibbonToolButton::drawIconAndLabel(class QPainter &,class QStyleOptionToolButton const &)" (?drawIconAndLabel@SARibbonToolButton@@MEAAXAEAVQPainter@@AEBVQStyleOptionToolButton@@@Z) 中导入
+  RationalVueGUI.vcxproj -> D:\test__1\RationalVueGUI\build\Debug\RationalVueGUI.exe

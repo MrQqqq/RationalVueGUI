@@ -1,475 +1,490 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\mocs_compilation.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\mocs_compilation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\main.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone\graphiceZone.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\GraphiceZone\graphiceZone.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\LightControl\controlStyle.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\LightControl\lightCircle.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\LightControl\lightControl.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineControl.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\mainwindow.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatus.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MainWindow\mainwindow.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRightQss.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructcenterofgravity.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructmiddlefeature.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructnomactbestfitwidget.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\operationzoneright.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\operationZoneRight.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\operationzonerightqss.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\rvfigureset.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\PaintZone\paintZone.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\controlStyle.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\statusBarZone.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\lightCircle.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\statusBarZone.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneIcon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\PHDFY3I5YZ\qrc_dataZoneLeftIcon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\PAGVQBTANO\qrc_res.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\GDNCXOLV4C\qrc_icons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\IAC7SNCG6T\qrc_res.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_images.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\KZ45C27WXQ\qrc_saribbonresouce.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_icons.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\7SPKKDTKM4\qrc_resource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Project\forUpdate\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp">
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\YOWNZXR6GO\qrc_it_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\WK7N4EWVRZ\qrc_optzonerightresources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\2W6WD5GFK4\qrc_ima_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\test__1\RationalVueGUI\build\RationalVueGUI_autogen\LKFSIJ5WYZ\qrc_res.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\DataZoneRight\dataZoneRight.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\GraphiceZone\graphiceZone.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\GraphiceZone\graphiceZone.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\LightControl\controlStyle.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\LightControl\lightCircle.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\LightControl\lightControl.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\LightControl\ui_lightControl.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\mainwindow.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineControl.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatus.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MainWindow\mainwindow.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\FramelessHelper.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonApplicationButton.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonBar.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonButtonGroupWidget.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCategory.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCategoryLayout.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCheckBox.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonComboBox.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonContextCategory.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonControlButton.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonCtrlContainer.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonDrawHelper.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonElementCreateDelegate.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonGlobal.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonElementManager.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGallery.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryGroup.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGalleryItem.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonGlobal.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonLineEdit.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonMainWindow.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonMenu.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonPannel.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonPannelOptionButton.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonQuickAccessBar.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonSeparatorWidget.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonStackedWidget.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRightQss.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonTabBar.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructcenterofgravity.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SARibbonToolButton.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructmiddlefeature.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\SAWindowButtonGroup.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\constructnomactbestfitwidget.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\operationZoneRight.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\operationzoneright.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\rvfigureset.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\operationzonerightqss.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\controlStyle.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\PaintZone\paintZone.h">
       <Filter>GUI</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\lightCircle.h">
-      <Filter>GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.h">
-      <Filter>GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\statusBarZone.h">
+    <ClInclude Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\statusBarZone.h">
       <Filter>GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\b1bf2b1f93d0142ad1fdb8dda75b59f2\qrc_dataZoneIcon.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\c6adf4cc7c2917fcad4688a19d0ada93\qrc_dataZoneIcon.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\6c26b69310ac520736f48723dd46cb25\qrc_res.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\c6adf4cc7c2917fcad4688a19d0ada93\qrc_dataZoneLeftIcon.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\b16315e7f1e214cdf7c9919a659dc59f\qrc_res.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\c47890c585fc74558fb42d908ad4906e\qrc_res.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\f1b4f8b9a3c5f7be03dfe982e1966798\qrc_saribbonresouce.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\e12e712102e600ac822363d1e40a3e71\qrc_icons.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\e628f55a101133220ec019b7bed761fa\qrc_resource.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\506119f422739d07abc9437f92cf35d7\qrc_res.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\7fb195db0894094aaa62b0b55ba52a79\qrc_images.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\9eaf91c686da20f48f62a8690996a790\qrc_saribbonresouce.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\3a4a8be13f11972ee95395a403fc412b\qrc_icons.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\69793adea1c1be225784cbefd7f01b33\qrc_resource.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\build\CMakeFiles\ee4ba64bbfd1e0f04c7db229702aa9c4\qrc_res.cpp.rule">
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\9fd5de1f5ca6ee636fda98ab06a916c1\qrc_it_icons.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="E:\Project\forUpdate\RationalVueGUI\CMakeLists.txt" />
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\ad023a0bd33116169f7675bebe348202\qrc_optzonerightresources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\dd2619f7af969621b869448d0259aadd\qrc_ima_icons.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\test__1\RationalVueGUI\build\CMakeFiles\68805954d009e39d5e91a09633e21fb4\qrc_res.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\test__1\RationalVueGUI\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GCV1.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\GCV1.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\GenericIcon.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\MiddleFeature.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\NomActIcon1.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\NomActIcon2.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\PT_COG1.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\jiantou.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\jiantou.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\light.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\light.png">
       <Filter>GUI</Filter>
     </Image>
-    <Image Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\probe.png">
+    <Image Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\probe.png">
       <Filter>GUI</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DataZoneLeft\dataZoneIcon.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeft.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\datazoneright.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DataZoneLeft\dataZoneLeftIcon.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\DataZoneRight\res.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DataZoneRight\datazoneright.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\LightControl\lightControl.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DataZoneRight\res.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\DimensionReportZone\dimensionReportZone.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineControl.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\GraphiceZone\graphiceZone.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h.autosave">
+    <None Include="D:\test__1\RationalVueGUI\GUI\LightControl\icons.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\LightControl\lightControl.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\MachineStatusCoordinate.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro.user">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineControl.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatus.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MachineStatusZone\res.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.h.autosave">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machineStatusZone.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\MenuBarZone\resource.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\OperationZoneRight.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\machine_status_area.pro.user">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\build.md">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\numberShowWidget.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\demo.qss">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MachineStatusZone\res.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\images.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MainWindow\saribbonresouce.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\OperationZoneRight\readme.md">
+    <None Include="D:\test__1\RationalVueGUI\GUI\MenuBarZone\resource.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\icons.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\OperationZoneLeft\it_icons.qrc">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.pro">
+    <None Include="D:\test__1\RationalVueGUI\GUI\OperationZoneLeft\operationZoneLeft.ui">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\PaintZone\paintZone.ui">
+    <None Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\demo.qss">
       <Filter>GUI</Filter>
     </None>
-    <None Include="E:\Project\forUpdate\RationalVueGUI\GUI\StatusBarZone\res.qrc">
+    <None Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\operationzoneright.ui">
+      <Filter>GUI</Filter>
+    </None>
+    <None Include="D:\test__1\RationalVueGUI\GUI\OperationZoneRight\optzonerightresources.qrc">
+      <Filter>GUI</Filter>
+    </None>
+    <None Include="D:\test__1\RationalVueGUI\GUI\PaintZone\ima_icons.qrc">
+      <Filter>GUI</Filter>
+    </None>
+    <None Include="D:\test__1\RationalVueGUI\GUI\PaintZone\paintZone.ui">
+      <Filter>GUI</Filter>
+    </None>
+    <None Include="D:\test__1\RationalVueGUI\GUI\StatusBarZone\res.qrc">
       <Filter>GUI</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CCCC04FA-F645-3D20-BAEB-3C18D326077D}</UniqueIdentifier>
+      <UniqueIdentifier>{FBF15C02-7437-3D9E-BDE5-55DC4DAE79C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="GUI">
-      <UniqueIdentifier>{05857F87-5126-34AC-A63D-C9A62640D0E5}</UniqueIdentifier>
+      <UniqueIdentifier>{924E892B-AF6C-3768-8DF3-60FA8C5C6531}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{62D55940-3906-3003-86D2-7B550664C29A}</UniqueIdentifier>
+      <UniqueIdentifier>{0E9DB902-F400-3FF7-AB47-34C242B6615E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'operationZoneRight.h'
+** Meta object code from reading C++ file 'operationzoneright.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "GUI/OperationZoneRight/operationZoneRight.h"
+#include "../../../../GUI/OperationZoneRight/operationzoneright.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'operationZoneRight.h' doesn't include <QObject>."
+#error "The header file 'operationzoneright.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.9.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -63,7 +63,7 @@ void COperationZoneRight::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 }
 
 const QMetaObject COperationZoneRight::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_COperationZoneRight.data,
+    { &QDockWidget::staticMetaObject, qt_meta_stringdata_COperationZoneRight.data,
       qt_meta_data_COperationZoneRight,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -78,12 +78,12 @@ void *COperationZoneRight::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_COperationZoneRight.stringdata0))
         return static_cast<void*>(const_cast< COperationZoneRight*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    return QDockWidget::qt_metacast(_clname);
 }
 
 int COperationZoneRight::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDockWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

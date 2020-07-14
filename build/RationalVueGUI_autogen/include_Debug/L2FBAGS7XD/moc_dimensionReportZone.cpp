@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "GUI/DimensionReportZone/dimensionReportZone.h"
+#include "../../../../GUI/DimensionReportZone/dimensionReportZone.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -63,7 +63,7 @@ void CDimensionReportZone::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
 }
 
 const QMetaObject CDimensionReportZone::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_CDimensionReportZone.data,
+    { &QDockWidget::staticMetaObject, qt_meta_stringdata_CDimensionReportZone.data,
       qt_meta_data_CDimensionReportZone,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -78,12 +78,12 @@ void *CDimensionReportZone::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CDimensionReportZone.stringdata0))
         return static_cast<void*>(const_cast< CDimensionReportZone*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    return QDockWidget::qt_metacast(_clname);
 }
 
 int CDimensionReportZone::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDockWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

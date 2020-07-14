@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "GUI/DataZoneLeft/dataZoneLeft.h"
+#include "../../../../GUI/DataZoneLeft/dataZoneLeft.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -63,7 +63,7 @@ void CDataZoneLeft::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 const QMetaObject CDataZoneLeft::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_CDataZoneLeft.data,
+    { &QDockWidget::staticMetaObject, qt_meta_stringdata_CDataZoneLeft.data,
       qt_meta_data_CDataZoneLeft,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -78,12 +78,12 @@ void *CDataZoneLeft::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CDataZoneLeft.stringdata0))
         return static_cast<void*>(const_cast< CDataZoneLeft*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDockWidget::qt_metacast(_clname);
 }
 
 int CDataZoneLeft::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDockWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

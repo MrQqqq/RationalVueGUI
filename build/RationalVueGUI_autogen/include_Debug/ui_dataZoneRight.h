@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'datazoneright.ui'
+** Form generated from reading UI file 'dataZoneRight.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.9.0
 **

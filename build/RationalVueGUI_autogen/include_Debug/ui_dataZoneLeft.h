@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDockWidget>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QWidget>
 
@@ -21,6 +22,8 @@ QT_BEGIN_NAMESPACE
 class Ui_CDataZoneLeft
 {
 public:
+    QDockWidget *dockWidget;
+    QWidget *dockWidgetContents;
     QWidget *widget;
     QWidget *widget_2;
 
@@ -28,13 +31,20 @@ public:
     {
         if (CDataZoneLeft->objectName().isEmpty())
             CDataZoneLeft->setObjectName(QStringLiteral("CDataZoneLeft"));
-        CDataZoneLeft->resize(224, 329);
-        widget = new QWidget(CDataZoneLeft);
+        CDataZoneLeft->resize(214, 362);
+        dockWidget = new QDockWidget(CDataZoneLeft);
+        dockWidget->setObjectName(QStringLiteral("dockWidget"));
+        dockWidget->setGeometry(QRect(0, 0, 221, 351));
+        dockWidget->setFloating(false);
+        dockWidgetContents = new QWidget();
+        dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
+        widget = new QWidget(dockWidgetContents);
         widget->setObjectName(QStringLiteral("widget"));
         widget->setGeometry(QRect(0, 0, 31, 331));
-        widget_2 = new QWidget(CDataZoneLeft);
+        widget_2 = new QWidget(dockWidgetContents);
         widget_2->setObjectName(QStringLiteral("widget_2"));
         widget_2->setGeometry(QRect(30, 0, 191, 331));
+        dockWidget->setWidget(dockWidgetContents);
 
         retranslateUi(CDataZoneLeft);
 
