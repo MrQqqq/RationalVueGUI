@@ -1,13 +1,13 @@
-#ifndef LIGHTCONTROL_H
-#define LIGHTCONTROL_H
+#ifndef CLightControl_H
+#define CLightControl_H
 
-#include <QDockWidget>
-
+#include <QWidget>
+#include <QDockWidget> //1
 namespace Ui {
 class CLightControl;
 }
 
-class CLightControl : public QDockWidget
+class CLightControl : public QDockWidget  //1
 {
     Q_OBJECT
 
@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::CLightControl *ui;
+
+private slots:
+    void initForm();
 };
 
 #endif // LIGHTCONTROL_H
