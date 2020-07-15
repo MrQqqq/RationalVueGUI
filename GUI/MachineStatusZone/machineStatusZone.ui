@@ -161,7 +161,7 @@ QComboBox::item{background-color:white};</string>
          <property name="font">
           <font>
            <family>黑体</family>
-           <pointsize>36</pointsize>
+           <pointsize>28</pointsize>
           </font>
          </property>
          <property name="autoFillBackground">
@@ -191,7 +191,8 @@ padding-left:20px;
         <widget class="QLCDNumber" name="lcdNumber_1">
          <property name="font">
           <font>
-           <pointsize>36</pointsize>
+           <family>Adobe Arabic</family>
+           <pointsize>9</pointsize>
           </font>
          </property>
          <property name="autoFillBackground">
@@ -247,7 +248,7 @@ color:#6BE7FF</string>
          <property name="font">
           <font>
            <family>黑体</family>
-           <pointsize>36</pointsize>
+           <pointsize>28</pointsize>
           </font>
          </property>
          <property name="autoFillBackground">
@@ -274,6 +275,12 @@ padding-left:20px;</string>
        </item>
        <item>
         <widget class="QLCDNumber" name="lcdNumber_2">
+         <property name="font">
+          <font>
+           <family>Adobe Arabic</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -327,7 +334,7 @@ color:#6BE7FF</string>
          <property name="font">
           <font>
            <family>黑体</family>
-           <pointsize>36</pointsize>
+           <pointsize>28</pointsize>
           </font>
          </property>
          <property name="autoFillBackground">
