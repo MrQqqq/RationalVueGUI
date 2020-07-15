@@ -9,6 +9,11 @@ class MainWindow : public SARibbonMainWindow
     Q_OBJECT
 public:
     MainWindow(QWidget* par=nullptr);
+	void readSettingsDefault();
+	void readSettingsBefore();
+	void read_Qsetting();
+protected:
+	void closeEvent(QCloseEvent *event);
 private slots:
     void onShowContextCategory(bool on);
     void onWpsStyle(bool on);

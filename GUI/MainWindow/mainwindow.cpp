@@ -18,7 +18,9 @@
 #include "SARibbonQuickAccessBar.h"
 #include "SARibbonButtonGroupWidget.h"
 
+#include<qsettings.h>
 #include<QSplitter>
+
 #include "dataZoneLeft.h"
 #include "dataZoneRight.h"
 #include "dimensionReportZone.h"
@@ -39,6 +41,7 @@
 
 MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
 {
+	
 #if 1
     QElapsedTimer cost;
     int lastTimes = 0;
@@ -260,6 +263,10 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
     CStatusBarZone *p_statusBarZone = new CStatusBarZone();
 	CLightControl *p_lightControl = new CLightControl();
 	
+
+
+	//DockWidget初始化
+	setDockNestingEnabled(true);
 	p_dataZoneLeft->AllDockWidgetFeatures;
 	p_dataZoneRight->AllDockWidgetFeatures;
 	p_dimensionReportZone->AllDockWidgetFeatures;
@@ -269,21 +276,91 @@ MainWindow::MainWindow(QWidget *par):SARibbonMainWindow(par)
 	p_operationZoneRight->AllDockWidgetFeatures;
 	p_paintZone->AllDockWidgetFeatures;
 	p_lightControl->AllDockWidgetFeatures;
-
-	addDockWidget(Qt::LeftDockWidgetArea, p_dimensionReportZone);
-	splitDockWidget(p_dimensionReportZone, p_graphiceZone, Qt::Horizontal);
-	splitDockWidget(p_graphiceZone,p_paintZone, Qt::Horizontal);
-	splitDockWidget(p_dimensionReportZone,p_dataZoneLeft, Qt::Vertical);
-	splitDockWidget(p_dataZoneLeft,p_dataZoneRight,Qt::Horizontal);
-	splitDockWidget(p_graphiceZone,p_operationZoneLeft,Qt::Vertical);
-	splitDockWidget(p_operationZoneLeft,p_operationZoneRight,Qt::Horizontal);
-	splitDockWidget(p_paintZone,p_lightControl,Qt::Vertical);
-	splitDockWidget(p_lightControl,p_machineStatusZone,Qt::Vertical);
 	
 
-    setStatusBar(p_statusBarZone);
+	//DockWidget布局
+	addDockWidget(Qt::LeftDockWidgetArea, p_dimensionReportZone);
+	splitDockWidget(p_dimensionReportZone, p_graphiceZone, Qt::Horizontal);
+	splitDockWidget(p_graphiceZone, p_paintZone, Qt::Horizontal);
+	splitDockWidget(p_dimensionReportZone,p_dataZoneLeft,Qt::Vertical);
+	splitDockWidget(p_dataZoneLeft, p_dataZoneRight, Qt::Horizontal);
+	splitDockWidget(p_graphiceZone, p_operationZoneLeft, Qt::Vertical);
+	splitDockWidget(p_operationZoneLeft, p_operationZoneRight, Qt::Horizontal);
+	splitDockWidget(p_paintZone, p_lightControl, Qt::Vertical);
+	splitDockWidget(p_lightControl, p_machineStatusZone, Qt::Vertical);
 
-	showNormal();
+
+	//设置可停靠区域
+	p_dataZoneLeft->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_dataZoneRight->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_dimensionReportZone->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_graphiceZone->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_machineStatusZone->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_operationZoneLeft->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_operationZoneRight->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_paintZone->setAllowedAreas(Qt::AllDockWidgetAreas);
+	p_lightControl->setAllowedAreas(Qt::AllDockWidgetAreas);
+	
+	//设置状态栏
+    setStatusBar(p_statusBarZone);
+	
+	//读取默认布局
+	readSettingsDefault();
+	
+	showMaximized();
+//	readSettingsBefore();
+}
+
+//用QSetting的方法保存布局
+void MainWindow::read_Qsetting()
+{
+	QSettings setting("MySetting", "MyApp");
+	restoreGeometry(setting.value("geometry").toByteArray());
+	restoreState(setting.value("state").toByteArray());
+	QList<QDockWidget *> dwList = this->findChildren<QDockWidget*>();
+	foreach(QDockWidget *dw, dwList) {
+		restoreDockWidget(dw);
+	}
+}
+
+//读取默认布局
+void MainWindow::readSettingsDefault()
+{
+	QFile file("../default.ini");
+	if (file.open(QIODevice::ReadOnly))
+	{
+		QByteArray ba;
+		QDataStream in(&file);
+		in >> ba;
+		file.close();
+		this->restoreState(ba);
+	}
+}
+
+//保存界面布局到到State.ini
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+	QFile f_state("State.ini");
+	if (f_state.open(QIODevice::WriteOnly))
+	{
+		QDataStream out(&f_state);
+		out << this->saveState();
+		f_state.close();
+	}
+}
+
+//从State.ini恢复界面布局
+void MainWindow::readSettingsBefore()
+{
+	QFile f_state("State.ini");
+	if (f_state.open(QIODevice::ReadOnly))
+	{
+		QByteArray ba;
+		QDataStream in(&f_state);
+		in >> ba;
+		f_state.close();
+		this->restoreState(ba);
+	}
 }
 
 void MainWindow::onShowContextCategory(bool on)
